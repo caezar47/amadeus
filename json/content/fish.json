@@ -1,0 +1,53 @@
+{
+	"contacts":{
+		"name":"amadeus-family",
+		"domain":"amadeus-family.ru",
+		"domain_link":"https://amadeus-family.ru/",
+		"color":"#F24F00",
+		"agreement_page":"agreement",
+		"copyright":"TPL",
+		"email":"email@email.ru",
+		"phone":"+7 (909) 225-88-87",  
+		"phone_tel":"+79092258887",   
+		"clock":"пн-пт с 9:00 до 18:00",  
+		"address":"г.&nbsp;Орёл, ул.&nbsp;Пионерская д.&nbsp;14",
+		"ip":"ИП Иванова И.В.",
+		"map_center_coord":"[52.977868, 36.057268]",
+		"map_zoom":"18",
+		"map_point_coord":"[52.978106, 36.056877]",
+		"map_point_heading":"Мы здесь!"
+	},
+	"soc":{
+		"vk":"https://vk.com/amadeus_family",
+		"fb":"https://www.facebook.com/",
+		"ok":"https://ok.ru/group/53717223997527",
+		"yb":"https://www.youtube.com/channel/UCqfZcP6JV8cmDVl98FnGu1Q/",
+		"tw":"https://twitter.com/",
+		"inst":"https://www.instagram.com/"
+	},
+	"page":{
+		"index":"/",
+		"catalog":"/catalog.html",
+		"catalog_card":"/catalog-card.html",
+		"about":"/about.html",
+		"working":"/working.html",
+		"news":"/news.html",
+		"news_card":"/news-card.html",
+		"contacts":"/contacts.html",
+		"search":"/search.html",
+		"cabinet":"/cabinet.html",
+		"basket":"/basket.html",
+		"order":"/order.html",
+		"profile":"/profile.html",
+		"404":"/404.html",
+		"sitemap":"/sitemap.html",
+		"style":"/style.html",
+		"agreement":"/agreement.html"
+	},	                           
+	"url-path-css":"/css",
+	"url-path-img":"/img",
+	"url-path-js":"/js",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/favicon",
+	"url-path-docs":"/docs"
+}

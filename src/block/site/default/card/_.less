@@ -1,0 +1,241 @@
+.card-item__{
+	&card{
+		position: relative;
+		display: block;	
+		&.is--adv{
+			display: flex;
+			//flex-wrap: wrap;
+			align-items: center;
+			@media @media-point-screen-lg {
+				flex-wrap: nowrap;
+				max-width: 300px;
+			}
+		}
+		&.is--news{
+			margin-bottom: 20px;
+			@media @media-point-xxs {
+				.content-block__cols:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}		
+		&.is--search{
+			display: flex;
+			margin-bottom: 15px;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&inner{
+		transition: @trs-site;
+		position: relative;		
+	}
+	&row{}
+	&cols{}
+	&bg{
+		&{
+			transition: @trs-site;		
+			position: absolute;
+			z-index: 5;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			background-color: fadeout(@info, 50%);
+			.card-item__card:hover &,
+			.card-item__card.is--active &{
+				opacity: 1;
+			}	
+		}	
+		&-view{		
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: @primary;
+			background-color: fadeout(@white, 30%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			font-size: @b-fs - 2;
+			&::after{
+				content: '';
+				position: absolute;
+				z-index: -1;
+				background-color: fadeout(@white, 80%);
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border-radius: 50%;
+				width: 145%;
+				height: 145%;
+				.card-item__card:hover &,
+				.card-item__card.is--active &{
+					animation: bounce 1.5s infinite ease-in-out;
+					animation: bounce 1.5s infinite cubic-bezier(0.42, 0, 0.63, 1);
+				}
+			}
+
+			@keyframes bounce {
+				0%   {transform:translate(-50%, -50%) scale(0);}
+				50%   {transform:translate(-50%, -50%) scale(1);}
+				100%   {transform:translate(-50%, -50%) scale(0);}
+			}
+		}
+	}
+	&preview{
+		display: block;
+		position: relative;
+		&.is--news{
+			margin-bottom: 10px;
+			filter: saturate(0);
+			transition: @trs-site;
+			.card-item__card:hover &,
+			.card-item__card.is--active &{
+				filter: saturate(1);
+			}
+		}
+		&.is--catalog{
+			margin-bottom: 10px;
+			@media @media-point-screen {
+				margin-bottom: 20px;
+			}
+		}
+		&.is--adv{
+			width: 80px;
+			height: 80px;
+			min-width: 80px;
+			margin: 0 30px 0 0;
+			svg{display: block;}
+		}
+		&.is--search{
+			min-width: 88px;
+			width: 88px;
+			margin-right: 20px;
+		}
+	}
+	&heading-block{
+	}
+	&heading{
+		transition: @trs-site;
+		&.is--news{
+			.heading4(); 
+			font-weight: 500;
+			margin-bottom: 15px;
+			a{
+				color: @default;
+				.card-item__card:hover &,
+				.card-item__card.is--active &{
+					color: @primary;
+				}
+			}
+		}
+		&.is--catalog{
+			.heading3();
+			margin-bottom: 5px;
+			@media @media-point-screen {
+				margin-bottom: 15px;
+			}
+			a{
+				color: @default;
+				.card-item__card:hover &,
+				.card-item__card.is--active &{
+					color: @primary;
+				}
+
+			}			
+		}
+		&.is--adv{
+			.heading6();
+			margin-bottom: 0;		
+		}
+		&.is--search{
+			font-weight: 400;
+			span{
+				color: @primary;
+				font-weight: 700;
+			}
+			a{
+				color: @default;
+				&:hover{
+					color: @success;
+				}
+			}
+		}
+	}
+	&heading-small{
+		transition: @trs-site;		
+	}	
+	&line{
+		flex-grow: 1;
+		margin: 0 15px;
+		border-bottom: 2px dotted @info;
+		@media @media-point-xxs {
+			display: none;
+		}
+	}
+	&date{	
+		display: block;
+		transition: @trs-site;
+		&.is--news{
+			color: @warning;
+			margin-bottom: 5px;
+		}
+		&.is--reviews{
+			margin-bottom: 0;
+			color: @warning;
+			font-weight: 400;
+		}
+	}
+	&note{
+		&.is--news{
+			line-height: @b-lh - 2;
+			margin-bottom: 20px;
+			@media @media-point-screen {
+				margin-bottom: 25px;
+			}
+		}
+		&.is--search{
+			span{
+				color: @primary;
+				font-weight: 700;
+			}
+		}
+	}
+	&btn{}
+	&elem-group{
+		&.is--search{}
+	}
+	&elem{
+		&.is--catalog{
+			&.is--cost{
+				color: @warning;
+				span{
+					.heading5();
+					color: @default;
+				}
+			}
+			&.is--status{
+				position: absolute;
+				z-index: 2;
+				top: 15px;
+				right: 20px;
+				letter-spacing: 0.5px;
+				color: #F71825;
+				text-transform: uppercase;
+				font-size: @b-fs - 2;
+			}
+		}
+	}
+	&elem-icon{}
+}
