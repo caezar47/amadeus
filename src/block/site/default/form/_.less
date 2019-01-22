@@ -5,7 +5,13 @@
 			background-color: @b-block-bg;
 		}
 	}
-	&panel{}
+	&panel{
+		&.is--login{
+			@media @media-point-notsmart {
+				max-width: 400px;
+			}
+		}
+	}
 	&container{
 		position: relative;
 		z-index: 2;
@@ -14,6 +20,9 @@
 		margin-top: -10px;
 		&.is--reviews{
 			margin-top: -30px;
+		}
+		&.is--login{
+			margin-top: -20px;
 		}
 	}
 	&cols{
@@ -66,6 +75,20 @@
 				}
 				&.is--select-btn{
 					.makeCols(4, 12);
+				}
+			}
+		}
+		&.is--login{
+			padding-top: 20px;
+			&.is--btn{
+				padding-top: 25px;
+				text-align: inherit;
+				width: auto;
+				align-self: center;
+				&.is--right{
+					@media @media-point-notsmart {
+						margin-left: auto;
+					}
 				}
 			}
 		}
@@ -184,6 +207,28 @@
 				}
 			}
 		}
+		&.is--pass{
+			padding-right: 65px;
+		}
+	}
+	&btn-pass{
+		.btn-clearfix();
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 25px;
+		width: 26px;
+		height: 15px;
+		color: @warning;
+		padding: 0;
+		&.is--hide{
+			display: none;
+		}
+		&.is--active{
+			display: block;
+		}
+		svg{display: block;}
 	}
 	&text{
 		&.is--agreement{

@@ -32,6 +32,10 @@
 				display: flex;
 			}
 		}
+		&.is--login{
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 	&container{	
 		position: relative;
@@ -112,6 +116,14 @@
 		//index page
 		&.is--index{}
 		//pages
+		&.is--login{
+			@media @media-point-screen {
+				width: 43vw;
+			}
+			@media @media-point-xxl {
+				width: 32vw;
+			}
+		}
 	}
 	&elem{
 		margin-bottom: 35px;
@@ -139,6 +151,71 @@
 		}
 		&:last-child{
 			margin-bottom: 0;
+		}
+		&.is--login{
+			margin-bottom: 0;
+			display: flex;
+			align-items: center;
+			&.is--left{
+				.makeCols(12, 12);
+				@media @media-point-screen {
+					.makeCols(6, 12);
+				}
+				&.is--full-top{
+					@media @media-point-smart {
+						//min-height: ~"calc(100vh - @{navbar_xs})";
+					}
+					@media @media-point-sm {
+						min-height: ~"calc((100vh - @{navbar_sm}) / 2)";
+					}
+					@media @media-point-md1 {
+						min-height: ~"calc((100vh - @{navbar_sm}) / 2)";
+					}
+					@media @media-point-screen {					
+						min-height: ~"calc(100vh - @{navbar_screen})";
+					}
+					@media @media-point-md2 {
+						min-height: ~"calc(100vh - @{navbar_md})";
+					}
+					@media @media-point-lg {
+						min-height: ~"calc(100vh - @{navbar_lg})"; 
+					}
+					@media @media-point-xxl {
+						min-height: ~"calc(100vh - @{navbar_xxl})"; 
+					}			
+					body.is--navbar_bottom &{
+						@media @media-point-sm {
+							min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_p} - @{navbar_bottom})";
+						}
+						@media @media-point-md1 {
+							min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_l} -  @{navbar_bottom})";
+						}
+						@media @media-point-md2 {	
+							min-height: ~"calc(100vh - @{navbar_md} - @{footer_screen_md} - @{navbar_bottom_tabs} - @{navbar_bottom})"; 
+						}
+					}
+				}
+			}
+			&.is--right{
+				background-position: top center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.makeCols(12, 12);
+				padding: 40px 15px;
+				@media @media-point-sm {
+					min-height: ~"calc(100vh / 2)";
+				}
+				@media @media-point-md1 {
+					min-height: ~"calc(100vh / 2)";
+				}
+				@media @media-point-screen {
+					.makeCols(6, 12);
+				}
+			}
 		}
 	}
 	&row{

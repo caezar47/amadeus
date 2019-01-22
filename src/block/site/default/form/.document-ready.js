@@ -6,3 +6,21 @@ $(".form__panel").validationEngine(
 		scroll: false
 	}
 ); 
+$(document.body).on('click', '.form__btn-pass', null, function(event){
+	event.preventDefault();
+	
+	var btn = $(this);
+	
+	if(btn.hasClass('is--view')) {
+		$(".form__btn-pass.is--view").removeClass("is--active");
+		$(".form__btn-pass.is--hide").addClass("is--active");
+		$(".form__control.is--pass").attr("type","text");
+	}
+	
+	if(btn.hasClass('is--hide')) {
+		$(".form__btn-pass.is--hide").removeClass("is--active");
+		$(".form__btn-pass.is--view").addClass("is--active");
+		$(".form__control.is--pass").attr("type","password");
+	}
+	
+});
