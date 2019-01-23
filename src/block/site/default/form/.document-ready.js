@@ -24,3 +24,7 @@ $(document.body).on('click', '.form__btn-pass', null, function(event){
 	}
 	
 });
+
+$(".form__switch").on('click', function(e) {
+	$(this).toggleClass('is--active');
+});	

@@ -40,6 +40,7 @@
 		"order":"/order.html",
 		"profile":"/profile.html",
 		"login":"/login.html",
+		"signup":"/signup.html",
 		"404":"/404.html",
 		"sitemap":"/sitemap.html",
 		"style":"/style.html",

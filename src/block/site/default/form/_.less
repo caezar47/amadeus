@@ -1,4 +1,6 @@
 .form__{
+	@signup_gutter_xs: 20px;
+	@signup_gutter: 2.4vw;
 	&block{
 		&.is--block{
 			padding: 35px 0;
@@ -23,6 +25,12 @@
 		}
 		&.is--login{
 			margin-top: -20px;
+		}
+		&.is--signup{
+			margin-top: -@signup_gutter_xs;
+			@media @media-point-notsmart {
+				margin-top: -@signup_gutter;
+			}
 		}
 	}
 	&cols{
@@ -89,6 +97,28 @@
 					@media @media-point-notsmart {
 						margin-left: auto;
 					}
+				}
+			}
+		}
+		&.is--signup{
+			padding-top: @signup_gutter_xs;
+			@media @media-point-notsmart {
+				.makeCols(6, 12);
+				padding-top: @signup_gutter;
+			}
+			&.is--agreement,
+			&.is--btn{
+				.makeCols(12, 12);
+				text-align: left;
+			}
+			&.is--btn{
+				@media @media-point-screen {					
+					padding-top: @signup_gutter + 0.6vw;
+				}
+			}
+			&.is--agreement{
+				@media @media-point-screen {					
+					padding-top: @signup_gutter - 0.9vw;
 				}
 			}
 		}
@@ -234,6 +264,10 @@
 		&.is--agreement{
 			font-size: @input_t_fs - 4;
 			line-height: @input_t_lh - 6;
+			&.is--signup{
+				font-size: @input_t_fs - 2;
+				line-height: @input_t_lh - 4; 
+			} 
 		}
 	}
 	//radio	
@@ -346,7 +380,58 @@
 		}
 	}
 	//switch
+
 	&switch{
+		&{
+			display: flex;
+			align-items: center;
+			.btn-clearfix();
+			padding: 0;
+			font-size: @switch_fs;
+			line-height: @switch_lh;
+			text-align: left;	
+			color: @switch_color;
+			&.is--active{
+				color: @switch_focus_color;
+			}
+		}
+		&-icon{
+			width: 28px;
+			height: 28px;
+			display: block;
+			margin-right: 5px;
+			&-border{
+				transition: @trs-site;
+				fill: transparent;
+				stroke: @switch_border_color;
+				.form__switch.is--active &{
+					stroke: @switch_focus_border_color;
+				}				
+			}
+			&-bg{
+				transition: @trs-site;
+				fill: @switch_bg_color;
+				.form__switch.is--active &{
+					fill: @switch_focus_bg_color;
+				}
+			}
+			&-check{
+				transition: @trs-site;
+				fill: transparent;
+				transform: scale(3);
+				transform-origin: center;
+				.form__switch.is--active &{
+					transition: all @trs-option 0.2s;
+					fill: @white;
+					transform: scale(1);
+				}
+			}
+		}	
+		&-label{
+
+		}
+	}
+	/*&switch{
 		padding-top: 10px;    
 		padding-bottom: 10px;
 		position: relative;
@@ -411,7 +496,7 @@
 				}
 			}	
 		}
-	}
+	}*/
 }
 // === formError === //
 .formError { 
