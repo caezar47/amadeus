@@ -31,7 +31,14 @@
 		transition: @trs-site;
 		position: relative;		
 	}
-	&row{}
+	&row{
+		&.is--catalog-page{
+			&.is--cost{
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
+	}
 	&cols{}
 	&bg{
 		&{
@@ -212,7 +219,40 @@
 			}
 		}
 	}
-	&btn{}
+	&btn{
+		&.is--catalog-page{
+			&.is--color{
+				margin-bottom: 5px;
+				display: block;
+				margin-right: 3px;
+				&{
+					.btn-clearfix();
+					padding: 0;
+					width: 36px;
+					height: 36px;
+				}
+				&-bg{
+					stroke: @white;
+					stroke-width: 3px;
+					transition: @trs-site;
+					.card-item__btn.is--catalog-page.is--active &{
+						stroke: transparent;
+					}
+				}
+				&-icon{
+					fill: transparent;
+					transform: scale(3);
+					transform-origin: center;
+					transition: @trs-site;
+					.card-item__btn.is--catalog-page.is--active &{
+						fill: @white;
+						transition: all @trs-option 0.2s;
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
 	&elem-group{
 		&.is--search{}
 	}
@@ -234,6 +274,75 @@
 				color: #F71825;
 				text-transform: uppercase;
 				font-size: @b-fs - 2;
+			}
+		}
+		&.is--catalog-page{
+			&.is--color{
+				margin-bottom: 20px;
+				&-heading{
+					margin-bottom: 5px;
+				}
+				&-list{
+					display: flex;
+					flex-wrap: wrap;
+				}
+			}
+			&.is--size{
+				margin-bottom: 35px;
+				&-heading{
+					margin-bottom: 12px;
+				}
+			}
+			&.is--qty{
+				margin-bottom: 30px;
+				@media @media-point-screen {
+					margin-bottom: 3.5vw
+				}
+				&-heading{
+					margin-bottom: 12px;
+				}
+			}
+			&.is--cost{
+				&{
+					border-bottom: 2px solid @primary;
+					padding-bottom: 35px;
+					margin-bottom: 25px;
+					@media @media-point-screen {
+						padding-bottom: 5.6vw;
+					}
+				}
+				&-heading{
+					margin-bottom: 5px;
+				}
+				&-num{
+					color: @primary;
+					font-weight: 700;
+					.calcFontSize(30, 38, 320, 1680);
+					.calcLineHeight(30, 38, 320, 1680);
+					display: flex; 
+					align-items: flex-start;
+				}
+				&-old{
+					color: @default;
+					font-size: @b-fs;
+					line-height: @b-lh;
+					font-weight: 400;
+					transform: translate(30px,-5px);
+					position: relative;
+					&::after{
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+						background-position: center;
+						background-size: contain;
+						background-image: url("@{url-path-img}/svg/bg-cost-old.svg");
+						background-repeat: no-repeat;
+						width: 100%;
+						height: 100%;
+					}
+				}
 			}
 		}
 	}

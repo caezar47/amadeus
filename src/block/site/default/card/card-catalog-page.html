@@ -1,0 +1,72 @@
+<div class="{{block_prefix}}card  {{block_mod}}">	
+	<div class="{{block_prefix}}elem  is--color  {{block_mod}}">	
+		<div class="{{block_prefix}}elem  is--color-heading  {{block_mod}}">	
+			Цвет:
+		</div>
+		<div class="{{block_prefix}}elem  is--color-list  {{block_mod}}">
+			<button type="button" class="{{block_prefix}}btn  is--color  {{block_mod}}" title="Красный">
+				<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="33" height="33" rx="16.5" fill="red" class="{{block_prefix}}btn  is--color-bg  {{block_mod}}"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.4703 13.4279C24.1271 14.0436 24.1804 15.0974 23.5893 15.7816L17.8293 22.4483C17.5309 22.7937 17.1076 22.9936 16.6616 22.9998C16.2155 23.0061 15.7872 22.8181 15.48 22.4812L12.44 19.1479C11.8314 18.4806 11.8574 17.4257 12.498 16.7917C13.1387 16.1577 14.1514 16.1848 14.76 16.8521L16.6082 18.8787L21.2107 13.5517C21.8019 12.8676 22.8135 12.8121 23.4703 13.4279Z" class="{{block_prefix}}btn  is--color-icon  {{block_mod}}"/></svg>
+			</button>
+			<button type="button" class="{{block_prefix}}btn  is--color  {{block_mod}}" title="Черный">
+				<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="33" height="33" rx="16.5" fill="black" class="{{block_prefix}}btn  is--color-bg  {{block_mod}}"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.4703 13.4279C24.1271 14.0436 24.1804 15.0974 23.5893 15.7816L17.8293 22.4483C17.5309 22.7937 17.1076 22.9936 16.6616 22.9998C16.2155 23.0061 15.7872 22.8181 15.48 22.4812L12.44 19.1479C11.8314 18.4806 11.8574 17.4257 12.498 16.7917C13.1387 16.1577 14.1514 16.1848 14.76 16.8521L16.6082 18.8787L21.2107 13.5517C21.8019 12.8676 22.8135 12.8121 23.4703 13.4279Z" class="{{block_prefix}}btn  is--color-icon  {{block_mod}}"/></svg>
+			</button>
+			<button type="button" class="{{block_prefix}}btn  is--color  {{block_mod}}" title="Голубой">
+				<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="33" height="33" rx="16.5" fill="blue" class="{{block_prefix}}btn  is--color-bg  {{block_mod}}"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.4703 13.4279C24.1271 14.0436 24.1804 15.0974 23.5893 15.7816L17.8293 22.4483C17.5309 22.7937 17.1076 22.9936 16.6616 22.9998C16.2155 23.0061 15.7872 22.8181 15.48 22.4812L12.44 19.1479C11.8314 18.4806 11.8574 17.4257 12.498 16.7917C13.1387 16.1577 14.1514 16.1848 14.76 16.8521L16.6082 18.8787L21.2107 13.5517C21.8019 12.8676 22.8135 12.8121 23.4703 13.4279Z" class="{{block_prefix}}btn  is--color-icon  {{block_mod}}"/></svg>
+			</button>	
+		</div>
+	</div>
+	<div class="{{block_prefix}}elem  is--size  {{block_mod}}">	
+		<div class="{{block_prefix}}elem  is--size-heading  {{block_mod}}">	
+			Размер:
+		</div>
+		[[azbntple 
+			tpl="/src/block/site/default/pagination/panel-size.html" 
+			block_prefix="pagination__"
+			block_mod="is--size"
+		]]
+	</div>
+	<div class="{{block_prefix}}elem  is--qty  {{block_mod}}">	
+		<div class="{{block_prefix}}elem  is--qty-heading  {{block_mod}}">	
+			Количество:
+		</div>
+		[[azbntple 
+			tpl="/src/block/site/default/form/elem-qty.html"
+			block_prefix="form__"
+			block_mod="  "
+			block_mod_elem="  "
+			block_color="  "
+			block_attr="  "
+		]]
+	</div>
+	<div class="{{block_prefix}}elem  is--cost  {{block_mod}}">	
+		<div class="{{block_prefix}}row row  is--gutter  is--cost  {{block_mod}}">	
+			<div class="{{block_prefix}}cols cols  is--cost  {{block_mod}}">	
+				<div class="{{block_prefix}}elem  is--cost-heading  {{block_mod}}">	
+					Цена:
+				</div>
+				<div class="{{block_prefix}}elem  is--cost-num  {{block_mod}}">	
+					3 150 ₽	
+					<div class="{{block_prefix}}elem  is--cost-old  {{block_mod}}">
+						3 150 ₽	
+					</div>	
+				</div>
+			</div>
+			<div class="{{block_prefix}}cols cols  is--cost-btn  {{block_mod}}">
+				[[azbntple 
+					tpl="/src/block/site/default/button/btn.html"
+					button_prefix="btn__" 
+					button_mod="  "
+					button_type="button"
+					button_name="В корзину" 
+				]]	
+			</div>
+		</div>
+	</div>
+	<div class="{{block_prefix}}elem  is--note  {{block_mod}}">	
+		[[azbntple 
+			tpl="/src/block/site/default/tabs/panel-catalog-card.html"
+			block_prefix="tabs__" 
+			block_mod="  "
+		]]
+	</div>
+</div>

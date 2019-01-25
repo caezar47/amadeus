@@ -2,6 +2,8 @@
 $(function() { 
 	var header = $('[data-slider-slick="slick-header"]');	
 	var gallery = $('[data-slider-slick="slick-gallery"]');	
+	var catalog = $('[data-slider-slick="slick-catalog"]');	
+	var catalog_nav = $('[data-slider-slick="slick-catalog-nav"]');	
 	var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';  
 	//var CMS__TPL_PATH = '/tpl';  
 	var CMS__TPL_PATH = '';  
@@ -50,5 +52,46 @@ $(function() {
 				}
 		    }
 		]
+	});
+	catalog.slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: prevArrow,
+		nextArrow: nextArrow,
+		fade: true,
+		asNavFor: catalog_nav,
+		/*responsive: [
+		    {
+				breakpoint: 1025,
+				settings: {
+					arrows: false, 
+				}
+		    },
+		]*/
+	});
+	catalog_nav.slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: false,
+		asNavFor: catalog,
+		//centerMode: true,
+		focusOnSelect: true,
+		/*responsive: [
+		    {
+				breakpoint: 1600,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 1,
+				}
+		    },
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+		    }
+		]*/
 	});
 }); 
