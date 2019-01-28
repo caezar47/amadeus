@@ -129,6 +129,15 @@
 		&.is--fw--700{
 			font-weight: 700;
 		}
+		&.is--basket{
+			@media @media-point-device {
+				padding: 10px 10px;
+			}
+			@media @media-point-smart {
+				font-size: @b-fs - 4;
+				line-height: @b-lh - 4;				
+			}
+		}
 	}
 	&name{}
 	&icon{
@@ -211,6 +220,18 @@
 	}*/
 }
 .btn-icon__{
+	&btn{
+		.btn-clearfix();
+		display: flex;
+		align-items: center;
+		padding: 0;
+		margin: 0;	
+		.heading5();
+		color: @primary;
+		&:hover{
+			color: @success;
+		}				
+	}
 	&item{
 		.btn-clearfix();
 		display: block;
@@ -237,6 +258,17 @@
 			height: @btn_icon_size - 14;
 			padding: 4px;
 		}
+		&.is--primary{
+			background-color: @primary;
+			border-color: @primary;
+			color: @white;
+			.btn-icon__btn:hover &,
+			&:hover{
+				background-color: @success;
+				border-color: @success;			
+				color: @white;
+			}
+		}
 		&.is--dark{
 			background-color: @warning;
 			border-color: @warning;
@@ -247,8 +279,35 @@
 				color: @btn_icon_color_hover;
 			}
 		}
+		&.is--light{
+			background-color: fadeout(@info, 50%);
+			border-color: fadeout(@info, 50%);
+			color: @primary;
+			&:hover{
+				background-color: @btn_icon_bg_hover;
+				border-color: @btn_icon_border_color_hover;			
+				color: @btn_icon_color_hover;
+			}
+		}
 		&.is--icon{
 			border-color: transparent;
+		}
+		&.is--dib{
+			display: inline-block;
+		}
+		&.is--basket{
+			width: 30px;
+			height: 30px;
+			min-width: 30px;
+			padding: 4px;
+		}
+	}
+	&name{
+		padding-left: 10px;
+		&.is--basket{
+			@media @media-point-device {
+				display: none;
+			}
 		}
 	}
 }

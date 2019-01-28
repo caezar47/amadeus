@@ -349,14 +349,14 @@
 //===== end's form =====//
 //===== table =====//
 @table_color 				:	@b-color;
-@table_border_color 		:	@info;
+@table_border_color 		:	@danger;
 @table_bg_colspan 			:	@white;
-@table_padding 				:	10px 12px;
+@table_padding 				:	30px 15px;
 
-@table_head_color 			:	@b-color;
-@table_head_bg 				:	@info;
-@table_head_padding 		:	12px;
-@table_head_border_color 	:	@info;
+@table_head_color 			:	@warning;
+@table_head_bg 				:	fadeout(@danger, 50%);
+@table_head_padding 		:	15px 25px;
+@table_head_border_color 	:	fadeout(@danger, 50%);
 //===== end's table =====//
 
 //===== pagination =====//
@@ -464,4 +464,7 @@
 
 @cabinet_nav_size_device 	: 	54px;
 @cabinet_nav_size			: 	415px;
+
+@cabinet_basket_bar_smart 	:   70px;
+@cabinet_basket_bar_tablet 	:   75px; 
 //===== end's cabinet navbar =====//

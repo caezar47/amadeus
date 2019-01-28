@@ -40,8 +40,8 @@
 } 
 .table{ 
 	border: 0; 
-	font-size: @b-fs - 2;
-	line-height: @b-lh - 6;
+	font-size: @b-fs;
+	line-height: @b-lh - 2;
 	margin-bottom: 0;
 	@media print{
 		* {color: @black}
@@ -58,15 +58,15 @@
 			background-color: @table_head_bg;
 			color: @table_head_color;	
 			padding: @table_head_padding;
-			font-weight: 400;
-			font-size: @b-fs - 6;
-			line-height: @b-lh - 8;
+			font-weight: 500;
+			font-size: @b-fs;
+			line-height: @b-lh - 2;
 			text-transform: uppercase;
 			border-top: 0!important;
 			vertical-align: middle!important;
 			border-bottom: 1px solid @table_head_border_color;	
 			//border-bottom: none;
-			//letter-spacing: 1px;
+			letter-spacing: 0.1vw;
 			//text-align: center;
 			//text-transform: uppercase;	
 			//border-right: 1px solid fadeout(@white, 50%);	
@@ -99,6 +99,7 @@
 			vertical-align: middle;
 			background-color: @white;
 			color: @table_color;
+			text-align: center;
 			&.is--left{text-align: left;}
 			&.is--right{text-align: right;}
 			p, div{
