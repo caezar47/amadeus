@@ -336,6 +336,9 @@
 			font-size: @b-fs;
 			line-height: @b-lh;
 			border-radius: 0;
+			&.is--xs{
+				height: @search_size - 20;
+			}
 			&::-moz-placeholder{
 				color: @search_input_color;
 				transition: @trs-site;
@@ -358,6 +361,7 @@
 		}
 		&-btn{
 			.btn-clearfix();
+			min-width: @search_size;
 			width: @search_size;
 			height: @search_size;
 			border-radius: @search_radius @search_radius;
@@ -370,6 +374,12 @@
 			color: @search_btn_color;
 			padding: 12px;
 			svg{display: block;}
+			&.is--xs{
+				min-width: @search_size - 20;
+				width: @search_size - 20;
+				height: @search_size - 20;
+				padding: 6px;
+			}
 			.form__search-input:focus + &{
 				//border-color: @b-color-a;
 			}
