@@ -299,66 +299,272 @@
 		</div>
 	</div>
 </nav> 
-		<main class="content-block__panel  is--login">
-	<div class="content-block__elem  is--left  is--full-top  is--login">
-		<div class="content-block__container container  is--login">
-			<div class="page-header__group  is--h1">
+		<form action="#" class="content-block__panel  is--delivery" data-validation>
+	<div class="content-block__elem  is--delivery  is--left">
+		<div class="content-block__container container  is--delivery  is--left">
+			<div class="page-header__group  is--h1">		
+	<div class="page-header__back  is--h1"><a href="/basket.html">— Вернуться в корзину</a></div>		
 	<div class="page-header__panel  is--h1">
-	<h1  class="page-header__heading  is--h1">Вход</h1>		
+	<h1  class="page-header__heading  is--h1">Оформление заказа</h1>		
 </div>
-</div>			
-			<div class="form__block  is--login"  >
-	<div class="page-header__group  is--h3">
-	<div class="page-header__panel  is--h3">
-	<h3  class="page-header__heading  is--h3">Войдите в личный кабинет, используя логин и пароль</h3>		
-</div>
-</div>
-	<form action="#" class="form__panel  is--login" data-validation >
-		<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
-		<input type="hidden" name="f[Форма: Войдите в личный кабинет, используя логин и пароль]">
-		<div class="form__row row  is--login">
-			<div class="form__cols cols  is--name  is--login">
-				<div class="form__item  is--login    ">
-	<input type="text"     class="form__control form-control validate[required]  is--login        " id="login[login]" name="f[Email, логин или телефон]" placeholder="Email, логин или телефон:">
-</div>
+</div>	
+			<div class="content-block__elem  is--delivery  is--line">
+				<div class="cabinet__delivery-block    ">
+	<h2 class="cabinet__delivery-heading    ">Выберите способ доставки:</h2>
+	<div class="cabinet__delivery-elem    ">
+		<label for="fd[delivery-pickup]" class="cabinet__delivery-card    ">
+	<div class="cabinet__delivery-card-btn    ">
+		<svg class="icon-svg icon-delivery-pickup" role="img">
+	<use xlink:href="/img/svg/sprite.svg#delivery-pickup"></use>
+</svg>
+		<svg class="cabinet__delivery-card-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-card-btn-switch-border    " cx="14" cy="14" r="13.5"/>
+			<circle class="cabinet__delivery-card-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-card-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+	</div>
+	<div class="cabinet__delivery-card-desc    ">
+		<div class="cabinet__delivery-card-heading    ">Самовывоз из магазина в Орле</div>
+		<div class="cabinet__delivery-card-heading-small    ">Бесплатно</div>
+	</div>
+	<input type="radio" class="cabinet__delivery-card-input       validate[required]" name="fd" id="fd[delivery-pickup]" value="Самовывоз из магазина в Орле">
+</label>
+	</div>
+	<div class="cabinet__delivery-elem    ">
+		<label for="fd[delivery-transport]" class="cabinet__delivery-card    ">
+	<div class="cabinet__delivery-card-btn    ">
+		<svg class="icon-svg icon-delivery-transport" role="img">
+	<use xlink:href="/img/svg/sprite.svg#delivery-transport"></use>
+</svg>
+		<svg class="cabinet__delivery-card-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-card-btn-switch-border    " cx="14" cy="14" r="13.5"/>
+			<circle class="cabinet__delivery-card-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-card-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+	</div>
+	<div class="cabinet__delivery-card-desc    ">
+		<div class="cabinet__delivery-card-heading    ">Транспортной компанией из Орла</div>
+		<div class="cabinet__delivery-card-heading-small    ">Стоимость зависит от региона доставки.</div>
+	</div>
+	<input type="radio" class="cabinet__delivery-card-input       validate[required]" name="fd" id="fd[delivery-transport]" value="Транспортной компанией из Орла">
+</label>	
+		<div class="cabinet__delivery-elem  is--transport    ">
+			<div class="row  is--gutter">
+				<div class="cols">
+					<button type="button" class="cabinet__delivery-transport    ">
+	<div class="cabinet__delivery-transport-btn    ">
+		<svg class="cabinet__delivery-transport-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-transport-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-transport-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+	</div>
+	<div class="cabinet__delivery-transport-preview    ">
+		<img src="/img/default/transport-boxberry.png" class="img-responsive" alt="">
+	</div>
+</button> 	
+				</div>
+				<div class="cols">
+					<button type="button" class="cabinet__delivery-transport    ">
+	<div class="cabinet__delivery-transport-btn    ">
+		<svg class="cabinet__delivery-transport-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-transport-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-transport-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+	</div>
+	<div class="cabinet__delivery-transport-preview    ">
+		<img src="/img/default/transport-pick.png" class="img-responsive" alt="">
+	</div>
+</button> 	
+				</div>
+				<div class="cols">
+					<button type="button" class="cabinet__delivery-transport    ">
+	<div class="cabinet__delivery-transport-btn    ">
+		<svg class="cabinet__delivery-transport-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-transport-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-transport-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+	</div>
+	<div class="cabinet__delivery-transport-preview    ">
+		<img src="/img/default/transport-cdek.png" class="img-responsive" alt="">
+	</div>
+</button> 	
+				</div>
 			</div>
-			<div class="form__cols cols  is--tel  is--login">
-				<div class="form__item  is--login  is--pass">
-	<input type="password"     class="form__control form-control validate[required]  is--login      is--pass" id="tel[tel]" name="f[Пароль]" placeholder="Пароль:">	
-	<button type="button" class="form__btn-pass  is--view  is--active"><svg class="icon-svg icon-pass-view" role="img">
-	<use xlink:href="/img/svg/sprite.svg#pass-view"></use>
-</svg></button>
-	<button type="button" class="form__btn-pass  is--hide"><svg class="icon-svg icon-pass-hide" role="img">
-	<use xlink:href="/img/svg/sprite.svg#pass-hide"></use>
-</svg></button>
-</div>
-			</div>
-			<div class="form__cols cols  is--btn  is--login">
-				<button type="submit" class="btn__item    ">
-	<span class="btn__name">Войти</span>
-</button>				
-			</div>
-			<div class="form__cols cols  is--btn  is--right  is--login">
-				<a href="{{page.conform}}" class="btn-link__item    ">
-	<span class="btn-link__name">Забыли пароль</span>
-</a>  				
-			</div>
-		</div>	
-	</form> 
-</div>
 		</div>
 	</div>
-	<div class="content-block__elem  is--right  is--login" style="background-image: url(/img/default/bg-login.png);">
-		<a href="/signup.html" class="btn-round__item  is--login">
-			<div class="btn-round__name">Регистрация</div>
-			<div class="btn-round__icon">
-				<svg class="icon-svg icon-arrow-enter" role="img">
-	<use xlink:href="/img/svg/sprite.svg#arrow-enter"></use>
-</svg> 
-			</div>
-		</a>
+	<div class="cabinet__delivery-elem    ">
+		<label for="fd[delivery-post]" class="cabinet__delivery-card    ">
+	<div class="cabinet__delivery-card-btn    ">
+		<svg class="icon-svg icon-delivery-post" role="img">
+	<use xlink:href="/img/svg/sprite.svg#delivery-post"></use>
+</svg>
+		<svg class="cabinet__delivery-card-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-card-btn-switch-border    " cx="14" cy="14" r="13.5"/>
+			<circle class="cabinet__delivery-card-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-card-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
 	</div>
-</main>	
+	<div class="cabinet__delivery-card-desc    ">
+		<div class="cabinet__delivery-card-heading    ">Почтой России из Орла</div>
+		<div class="cabinet__delivery-card-heading-small    ">Точная стоимость рассчитывается менеджером</div>
+	</div>
+	<input type="radio" class="cabinet__delivery-card-input       validate[required]" name="fd" id="fd[delivery-post]" value="Почтой России из Орла">
+</label>
+	</div>
+</div>
+			</div>	
+			<div class="content-block__elem  is--delivery  is--line">
+				<div class="cabinet__delivery-block    ">
+	<h2 class="cabinet__delivery-heading    ">Выберите способ оплаты:</h2>
+	<div class="cabinet__delivery-elem    ">
+		<label for="fp[delivery-invoice]" class="cabinet__delivery-card    ">
+	<div class="cabinet__delivery-card-btn    ">
+		<svg class="icon-svg icon-delivery-invoice" role="img">
+	<use xlink:href="/img/svg/sprite.svg#delivery-invoice"></use>
+</svg>
+		<svg class="cabinet__delivery-card-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-card-btn-switch-border    " cx="14" cy="14" r="13.5"/>
+			<circle class="cabinet__delivery-card-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-card-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+	</div>
+	<div class="cabinet__delivery-card-desc    ">
+		<div class="cabinet__delivery-card-heading    ">Оформление счета</div>
+		<div class="cabinet__delivery-card-heading-small    ">  </div>
+	</div>
+	<input type="radio" class="cabinet__delivery-card-input       validate[required]" name="fp" id="fp[delivery-invoice]" value="Оформление счета">
+</label>
+	</div>
+	<div class="cabinet__delivery-elem    ">
+		<label for="fp[delivery-cash]" class="cabinet__delivery-card    ">
+	<div class="cabinet__delivery-card-btn    ">
+		<svg class="icon-svg icon-delivery-cash" role="img">
+	<use xlink:href="/img/svg/sprite.svg#delivery-cash"></use>
+</svg>
+		<svg class="cabinet__delivery-card-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-card-btn-switch-border    " cx="14" cy="14" r="13.5"/>
+			<circle class="cabinet__delivery-card-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-card-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+	</div>
+	<div class="cabinet__delivery-card-desc    ">
+		<div class="cabinet__delivery-card-heading    ">Наличными при получении</div>
+		<div class="cabinet__delivery-card-heading-small    ">При отправке наложенным платежом через Почту России</div>
+	</div>
+	<input type="radio" class="cabinet__delivery-card-input       validate[required]" name="fp" id="fp[delivery-cash]" value="Наличными при получении">
+</label>
+	</div>
+	<div class="cabinet__delivery-elem    ">
+		<label for="fp[delivery-online]" class="cabinet__delivery-card    ">
+	<div class="cabinet__delivery-card-btn    ">
+		<svg class="icon-svg icon-delivery-online" role="img">
+	<use xlink:href="/img/svg/sprite.svg#delivery-online"></use>
+</svg>
+		<svg class="cabinet__delivery-card-btn-switch    " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="cabinet__delivery-card-btn-switch-border    " cx="14" cy="14" r="13.5"/>
+			<circle class="cabinet__delivery-card-btn-switch-bg    " cx="14" cy="14" r="11"/>
+			<path class="cabinet__delivery-card-btn-switch-check    " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+	</div>
+	<div class="cabinet__delivery-card-desc    ">
+		<div class="cabinet__delivery-card-heading    ">Картой Online</div>
+		<div class="cabinet__delivery-card-heading-small    ">  </div>
+	</div>
+	<input type="radio" class="cabinet__delivery-card-input       validate[required]" name="fp" id="fp[delivery-online]" value="Картой Online">
+</label>
+	</div>
+</div>
+			</div>	
+			<div class="content-block__elem  is--delivery">
+				<div class="form__block  is--personal"  >
+	<div class="page-header__group  is--h2x  is--fw-500  color--warning">
+	<div class="page-header__panel  is--h2x  is--fw-500  color--warning">
+	<h4  class="page-header__heading  is--h2x  is--fw-500  color--warning">Личные данные</h4>		
+</div>
+</div>
+	<div class="form__panel  is--personal"  >
+		<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+		<input type="hidden" name="f[Форма: Личные данные]">
+		<div class="form__row row  is--personal">
+			<div class="form__cols cols  is--name  is--personal">
+				<div class="form__item  is--personal  is--name">
+	<input type="text"     class="form__control form-control validate[required, custom[onlyLetterSp]]  is--personal      is--name" id="name[name]" name="f[ФИО]" placeholder="ФИО">
+</div>
+			</div>
+			<div class="form__cols cols  is--tel  is--personal">
+				<div class="form__item  is--personal  is--tel">
+	<input type="tel"     class="form__control form-control validate[required, custom[phone]]  is--personal      is--tel" id="tel[tel]" name="f[Телефон]" placeholder="Телефон">
+</div>
+			</div>
+			<div class="form__cols cols  is--email  is--personal">
+				<div class="form__item  is--personal  is--email">
+	<input type="email"     class="form__control form-control validate[required, custom[email]]  is--personal      is--email" id="email[email]" name="f[E-mail]" placeholder="E-mail">
+</div>
+			</div>
+		</div>	
+	</div> 
+</div>	
+			</div>
+		</div>
+	</div>
+	<div class="content-block__elem  is--delivery  is--right">
+		<div class="content-block__container container  is--delivery  is--right">
+			<div class="content-block__elem  is--delivery">
+				<div class="page-header__back  is--fw-400"><a href="/basket.html">— Вернуться в корзину</a></div>
+			</div>
+			<div class="content-block__elem  is--delivery">
+				<div class="cabinet__delivery-result-block    ">
+	<h3 class="cabinet__delivery-result-heading    ">Ваш заказ</h3>
+	<div class="cabinet__delivery-result-card    ">
+		<div class="cabinet__delivery-result-card-name    ">Платье Д-1552</div>
+		<div class="cabinet__delivery-result-card-cost    ">3 150 <small>₽</small></div>
+	</div>
+	<div class="cabinet__delivery-result-card    ">
+		<div class="cabinet__delivery-result-card-name    ">Платье Д-1552</div>
+		<div class="cabinet__delivery-result-card-cost    ">3 150 <small>₽</small></div>
+	</div>
+	<div class="cabinet__delivery-result-card    ">
+		<div class="cabinet__delivery-result-card-name    ">Платье Д-1552</div>
+		<div class="cabinet__delivery-result-card-cost    ">3 150 <small>₽</small></div>
+	</div>
+</div>
+			</div>
+			<div class="content-block__elem  is--delivery">
+				<div class="cabinet__delivery-status-block    ">
+	<div class="cabinet__delivery-status-elem    ">
+		<div class="cabinet__delivery-status-heading    ">Доставка:</div>
+		<div class="cabinet__delivery-status-heading-small    ">Самовывоз из магазина в Орле</div>
+	</div>
+	<div class="cabinet__delivery-status-elem    ">
+		<div class="cabinet__delivery-status-heading    ">Оплата:</div>
+		<div class="cabinet__delivery-status-heading-small    ">Наличными при получении</div>
+	</div>
+</div>				
+			</div>
+			<div class="content-block__elem  is--delivery">
+				<div class="cabinet__delivery-footer-block    ">
+	<div class="cabinet__delivery-footer-row row  is--gutter    ">
+		<div class="cabinet__delivery-footer-cols cols  is--qty    ">
+			<span>3</span> товара
+		</div>
+		<div class="cabinet__delivery-footer-cols cols  is--cost    ">
+			9 600 <small>₽</small> 
+		</div>
+	</div>
+	<div class="cabinet__delivery-footer-btn    ">
+		<button type="submit" class="btn__item  is--line  is--invers">
+	<span class="btn__name">Оформить заказ</span>
+</button>
+		<div class="cabinet__delivery-footer-warning    ">
+			<svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.1" cx="19" cy="19" r="19" fill="#F71825"/><circle cx="19" cy="19" r="14" fill="#F71825"/><path d="M17.1811 12.9918C17.0838 11.9222 17.926 11 19 11C20.074 11 20.9162 11.9222 20.8189 12.9918L20.0905 21.0041C20.0393 21.5681 19.5664 22 19 22C18.4336 22 17.9607 21.5681 17.9095 21.0041L17.1811 12.9918Z M21 25C21 26.1046 20.1046 27 19 27C17.8954 27 17 26.1046 17 25C17 23.8954 17.8954 23 19 23C20.1046 23 21 23.8954 21 25Z" fill="white"/></svg>
+			Для оформления заказа заполните личные данные
+		</div>
+	</div>
+</div>				
+			</div>
+		</div>
+	</div>
+</form>	
 		<footer class="footer__block">	
 	<div class="footer__inner">	
 		<div class="footer__container container">
