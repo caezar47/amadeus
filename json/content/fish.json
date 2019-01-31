@@ -23,7 +23,10 @@
 		"ok":"https://ok.ru/group/53717223997527",
 		"yb":"https://www.youtube.com/channel/UCqfZcP6JV8cmDVl98FnGu1Q/",
 		"tw":"https://twitter.com/",
-		"inst":"https://www.instagram.com/"
+		"tg":"tg://resolve?domain=amadeusfamily",
+		"vider":"viber://chat?number=79092258887",
+		"wa":"https://wa.me/79092258887",
+		"inst":"https://www.instagram.com/amadeus_family/"
 	},
 	"page":{
 		"index":"/",

@@ -4,10 +4,25 @@
 		align-items: center;		
 		margin-left: -(@soc_gutter);
 		margin-right: -(@soc_gutter);
+		&.is--header{
+			margin-top: -(@soc_gutter);
+			margin-left: -(@soc_gutter + 2.5);
+			margin-right: -(@soc_gutter + 2.5);
+		}
 	}
 	&cols{
 		padding-left: @soc_gutter;
 		padding-right: @soc_gutter;
+		&.is--header{
+			padding-top: @soc_gutter;
+			padding-left: @soc_gutter + 2.5;
+			padding-right: @soc_gutter + 2.5;
+			@media @media-point-notxxs {				
+				&.is--tel{
+					padding-left: @soc_gutter + 2.5 + 20;
+				}
+			}
+		}
 	}
 	&heading{	
 		&.is--contact{
@@ -18,9 +33,6 @@
 		display: block;
 		width: @soc_size;
 		height: @soc_size;
-		//border: 2px solid @soc_border;
-		//border-radius: @soc_border_radius;
-		//padding: 6px;
 		a&, a&:focus{color: @soc_color;} 
 		svg{display: block;}
 		&.is--footer{
@@ -28,6 +40,21 @@
 		&.is--vk{
 			&:hover{
 				color: @color-vk;				
+			}
+		}
+		&.is--viber{
+			&:hover{
+				color: @color-viber;				
+			}
+		}
+		&.is--wa{
+			&:hover{
+				color: @color-wa;				
+			}
+		}
+		&.is--tg{
+			&:hover{
+				color: @color-tg;				
 			}
 		}
 		&.is--fb{
@@ -55,5 +82,9 @@
 				color: @color-yb;				
 			}
 		}
+	}
+	&tel{
+		.heading4();
+		&, &:focus, &:hover{color: @warning;} 
 	}
 }

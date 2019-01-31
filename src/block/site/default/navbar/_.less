@@ -200,7 +200,20 @@
 				.makeCols(2, 12);
 			}
 		}
-		&.is--center{}
+		&.is--center{
+			.navbar__block.is--index &{
+				@media @media-point-screen-lg {
+					margin-right: auto;
+				}
+			}
+		}
+		&.is--right-center{
+			.navbar__block.is--index &{
+				@media @media-point-screen-lg {
+					display: none;
+				}
+			}
+		}	
 		&.is--right{	
 			display: none;
 			@media @media-point-screen-lg {
