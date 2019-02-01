@@ -1,6 +1,12 @@
 .pagination__{
 	&block{
 		//padding-bottom: 30px;
+		&.is--size{
+			&.is--xl{
+				max-width: 320px;
+				margin-left: auto;
+			}
+		}
 	}
 	&list{
 		list-style: none;
@@ -37,6 +43,19 @@
 				}				
 			}
 			&.is--btn{
+			}
+			&.is--filter{
+				@media @media-point-screen {
+					.makeCols(2.4, 12);
+				}
+			}
+			&.is--xl{
+				@media @media-point-screen {
+					.makeCols(4, 12);
+				}
+				&:last-of-type{
+					padding-right: 5px;
+				}
 			}
 		} 
 	}
@@ -75,6 +94,12 @@
 				background-color: transparent;
 				border-color: @primary;
 				color: @primary;
+			}
+			&.is--xl{
+				@media @media-point-screen {
+					width: 100%;
+					line-height: 58px;
+				}
 			}
 		}
 	}

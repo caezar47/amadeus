@@ -31,7 +31,9 @@ $('.navbar-aside__dropdown [data-toggle="dropdown"]').on('click', function(e) {
 	e.stopPropagation();
 	$(this).parent().siblings().removeClass('open');
 	$(this).parent().toggleClass('open');
-});
+}); 
 $('.azbn__search-dropdown').on('shown.bs.dropdown', function(e) {
 	$('.azbn__search-input').focus();
 });
+//$('#modal-personal').modal();
+

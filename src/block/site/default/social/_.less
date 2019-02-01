@@ -8,6 +8,9 @@
 			margin-top: -(@soc_gutter);
 			margin-left: -(@soc_gutter + 2.5);
 			margin-right: -(@soc_gutter + 2.5);
+			@media @media-point-smart {
+				justify-content: center;
+			}
 		}
 	}
 	&cols{
@@ -17,6 +20,11 @@
 			padding-top: @soc_gutter;
 			padding-left: @soc_gutter + 2.5;
 			padding-right: @soc_gutter + 2.5;
+			@media @media-point-smart {			
+				&.is--tel{
+					display: none;
+				}				
+			}
 			@media @media-point-notxxs {				
 				&.is--tel{
 					padding-left: @soc_gutter + 2.5 + 20;

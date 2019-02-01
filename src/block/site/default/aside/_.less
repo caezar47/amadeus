@@ -11,6 +11,9 @@
 			z-index: 95;
 			transform: translateY(~"calc(100% - @{aside_height_device})");
 			transition: @trs-site;
+			&.is--catalog{
+				display: none;
+			}
 		}	
 		@media @media-point-screen-lg {
 			position: relative;

@@ -86,6 +86,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: -15px;
+		@media @media-point-xxs {justify-content: center;}
 		@media @media-point-device{flex-wrap: wrap;}
 	}
 	&cols{
@@ -94,6 +95,9 @@
 			//.makeCols(12, 12);
 		}
 		&.is--copyright{
+			@media @media-point-xxs {
+				text-align: center;
+			}
 			@media @media-point-tablet {
 				display: none;
 			}

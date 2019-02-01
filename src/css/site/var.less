@@ -84,7 +84,7 @@
 @navbar_bg_top 				:	@warning;
 @navbar_bg_screen 			:	@white;
 @navbar_bg_screen_hover 	:	@white; 
-@navbar_bg_device 			:	@warning;
+@navbar_bg_device 			:	lighten(@warning, 15%);
 @navbar_ff 					:	@b-ff;
 @navbar_fs 					:	@b-fs; 
 @navbar_lh 					:	@b-lh;  
@@ -278,12 +278,12 @@
 @input_w_focus_plh_color	:	@b-color;
 
 //=== range ===
-@range_height 				: 	40px;
-@range_line_bg 				: 	@primary;
-@range_line_bg_hover 		: 	@success;
+@range_height 				: 	32px;
+@range_line_bg 				: 	@warning;
+@range_line_bg_hover 		: 	@primary;
 
-@range_btn_bg 				: 	@success;
-@range_btn_bg_hover 		: 	@primary;
+@range_btn_bg 				: 	@primary;
+@range_btn_bg_hover 		: 	@success;
 @range_btn_color 			: 	@white;
 
 //=== radio ===
@@ -382,8 +382,8 @@
 @modal_backdrop 			:	@default;
 @modal_backdrop_fade 		:	0.9;
 @modal_bg 					:	@white;
-@modal_border_rad 			:	5px;
-@modal_width 				:	500px;
+@modal_border_rad 			:	0;
+@modal_width 				:	760px;
 @modal_width_device 		:	650px;
 @modal_btn_width 			: 	34px;
 @modal_btn_border_rad 		:	50%;

@@ -1,12 +1,13 @@
 .btn-base(){
 	.heading5();
 	font-weight: 400;
-	padding: 15px 25px;
+	padding: 10px 20px;
 	//font-size: @btn_fs;
 	//line-height: @btn_lh;
 	border-radius: @btn_radius;
 	@media @media-point-screen {
-		padding: 18px 2.3vw;
+		//padding: 18px 2.3vw;
+		padding: 12px 2vw;
 		letter-spacing: 0.015vw;
 	}
 	&::before{
@@ -76,10 +77,7 @@
 			background: @btn_w_bg_color;
 			color: @btn_w_color;
 			font-weight: 700;
-			@media @media-point-screen {
-				padding-left: 2.7vw;
-				padding-right: 2.7vw;
-			}
+			
 			&:hover{			
 				color: @btn_w_hover_color;
 				border-color: @btn_w_hover_border_color;
@@ -238,7 +236,11 @@
 		color: @primary;
 		&:hover{
 			color: @success;
-		}				
+		}	
+		&.is--reset{
+			font-size: @b-fs - 4;
+			line-height: @b-lh - 6;
+		}			
 	}
 	&item{
 		.btn-clearfix();
@@ -289,11 +291,10 @@
 		}
 		&.is--light{
 			background-color: fadeout(@info, 50%);
-			border-color: fadeout(@info, 50%);
+			border-color: fadeout(@info, 100%);
 			color: @primary;
 			&:hover{
-				background-color: @btn_icon_bg_hover;
-				border-color: @btn_icon_border_color_hover;			
+				background-color: @btn_icon_bg_hover;		
 				color: @btn_icon_color_hover;
 			}
 		}
@@ -304,10 +305,26 @@
 			display: inline-block;
 		}
 		&.is--basket{
-			width: 30px;
-			height: 30px;
-			min-width: 30px;
-			padding: 4px;
+			@media @media-point-device {
+				width: 30px;
+				height: 30px;
+				min-width: 30px;
+				padding: 4px;
+				
+			}
+		}
+		&.is--reset{
+			padding: 0;
+			border: 0;
+			width: 20px;
+			height: 20px;
+			background-color: transparent;
+			.btn-icon__btn:hover &,
+			&:hover{
+				border: 0;
+				color: @primary;
+				transform: rotate(90deg);
+			}
 		}
 	}
 	&name{
