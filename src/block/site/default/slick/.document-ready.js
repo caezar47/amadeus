@@ -6,9 +6,9 @@ $(function() {
 	var catalog = $('[data-slider-slick="slick-catalog"]');	
 	var catalog_view = $('[data-slider-slick="slick-catalog-view"]');	
 	var catalog_nav = $('[data-slider-slick="slick-catalog-nav"]');	
-	var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';  
-	//var CMS__TPL_PATH = '/tpl';  
-	var CMS__TPL_PATH = '';  
+	//var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';  
+	var CMS__TPL_PATH = '/amadeus';  
+	//var CMS__TPL_PATH = '';  
 	//local
 	var prevArrow = '<button type="button" class="slick-btn  is--prev"><span class="sr-only">Предыдущий слайд</span><svg class="icon-svg icon-icon-prev" role="img"><use xlink:href="'+ CMS__TPL_PATH +'/img/svg/sprite.svg#icon-prev"></use></svg></button>';
 	var nextArrow = '<button type="button" class="slick-btn  is--next"><span class="sr-only">Следующий слайд</span><svg class="icon-svg icon-icon-next" role="img"><use xlink:href="'+ CMS__TPL_PATH +'/img/svg/sprite.svg#icon-next"></use></svg></button>';	
