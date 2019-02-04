@@ -220,7 +220,7 @@
 			transition: @trs-site;
 			color: @input_plh_color;
 			font-size: @input_plh_fs;
-			line-height: @input_plh_lh;
+			line-height: @input_plh_lh + 12;
 			//text-transform: uppercase;
 			//letter-spacing: 0.5px;
 		}
@@ -263,6 +263,13 @@
 			color: @input_t_color;
 			&::-ms-expand{
 			    display: none;
+			}
+			&.is--catalog-page{
+				height: @input_height - 20;
+				background-color: transparent;
+				&:focus{
+					background-color: @white;
+				}
 			}
 		}
 		&.is--white{ 
@@ -311,7 +318,7 @@
 		transform: translateY(-50%);
 		right: 25px;
 		width: 26px;
-		height: 15px;
+		height: 16px;
 		color: @warning;
 		padding: 0;
 		&.is--hide{
