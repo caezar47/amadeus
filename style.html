@@ -527,17 +527,17 @@
 		<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
 		<input type="hidden" name="f[Форма: Form element]">
 		<div class="form__row row    ">
-			<div class="form__cols cols  is--name    ">
+			<div class="form__cols cols    ">
 				<div class="form__item      is--name">
 	<input type="text" class="form__control form-control validate[required, custom[onlyLetterSp]]        " id="name[name]" name="f[Имя]" placeholder="Имя">
 </div>
 			</div>
-			<div class="form__cols cols  is--tel    ">
+			<div class="form__cols cols    ">
 				<div class="form__item      is--tel">
 	<input type="tel" class="form__control form-control validate[required, custom[phone]]        " id="tel[tel]" name="f[Телефон]" placeholder="Телефон">
 </div>
 			</div>
-			<div class="form__cols cols  is--email    ">
+			<div class="form__cols cols    ">
 				<div class="form__item      is--email">
 	<input type="email" class="form__control form-control validate[required, custom[email]]        " id="email[email]" name="f[E-mail]" placeholder="E-mail">
 </div>
@@ -548,6 +548,57 @@
 		<option>Пункт 1</option><option>Пункт 2</option><option>Пункт 3</option>
 	</select>
 </div>
+			</div>
+			<div class="form__cols cols  is--radio    ">
+				<div class="form__item      is--pass">
+	<input type="password"     class="form__control form-control validate[required]          is--pass" id="{{block_form_id}}[tel]" name="f[Пароль]" placeholder="Пароль:">	
+	<button type="button" class="form__btn-pass  is--view  is--active" title="Показать пароль"><svg class="icon-svg icon-pass-view" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#pass-view"></use>
+</svg></button>
+	<button type="button" class="form__btn-pass  is--hide" title="Скрыть пароль"><svg class="icon-svg icon-pass-hide" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#pass-hide"></use>
+</svg></button>
+</div>
+			</div>
+			<div class="form__cols cols    ">
+				<div class="form__item  is--switch        ">
+	<button type="button" class="form__switch            ">
+		<svg class="form__switch-icon            " viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+			<circle class="form__switch-icon-border            " cx="14" cy="14" r="13.5"/>
+			<circle class="form__switch-icon-bg            " cx="14" cy="14" r="11"/>
+			<path class="form__switch-icon-check            " fill-rule="evenodd" clip-rule="evenodd" d="M17.669 11.2567C18.0795 11.6262 18.1128 12.2584 17.7433 12.669L14.1433 16.669C13.9568 16.8762 13.6922 16.9961 13.4135 16.9999C13.1347 17.0037 12.867 16.8909 12.675 16.6887L10.775 14.6887C10.3946 14.2883 10.4108 13.6554 10.8113 13.275C11.2117 12.8946 11.8446 12.9108 12.225 13.3112L13.3802 14.5272L16.2567 11.331C16.6262 10.9205 17.2585 10.8872 17.669 11.2567Z"/>
+		</svg>
+		<div class="form__switch-label            "> 
+			Оптовый покупатель
+		</div>
+	</button>	
+</div>				
+			</div>
+			<div class="form__cols cols    ">
+				<div class="form__item  is--qty        ">
+	<div class="form__qty            ">
+		<button type="button" class="form__qty-btn            ">
+			<svg viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg"><path d="M40 20.1419C40 31.1876 31.0457 40.1419 20 40.1419C8.95431 40.1419 0 31.1876 0 20.1419C0 9.09618 8.95431 0.141876 20 0.141876C31.0457 0.141876 40 9.09618 40 20.1419Z" class="form__qty-btn-bg            "/><path d="M28.753 19.2632C29.2406 19.2632 29.6317 19.6543 29.6317 20.1419C29.6317 20.6296 29.2406 21.0206 28.753 21.0206L20.8771 21.0206L19.1152 21.016L11.2393 21.016C10.9955 21.0206 10.7747 20.9194 10.6183 20.763C10.4618 20.6066 10.3652 20.3811 10.3652 20.1419C10.3652 19.6543 10.7563 19.2632 11.2439 19.2632H28.753Z" class="form__qty-btn-icon            "/></svg>
+		</button>	
+		<input type="number" class="form__qty-input            " value="1">
+		<button type="button" class="form__qty-btn            ">
+			<svg viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg"><path d="M40 20.1419C40 31.1876 31.0457 40.1419 20 40.1419C8.95431 40.1419 0 31.1876 0 20.1419C0 9.09618 8.95431 0.141876 20 0.141876C31.0457 0.141876 40 9.09618 40 20.1419Z" class="form__qty-btn-bg            "/><path d="M29.6317 20.1415C29.6317 19.6538 29.2406 19.2628 28.753 19.2628L20.8771 19.2628V11.3869C20.8771 10.8993 20.4861 10.5083 19.9984 10.5083C19.5108 10.5083 19.1198 10.8993 19.1198 11.3869V19.2628L11.2439 19.2628C10.7563 19.2628 10.3652 19.6538 10.3652 20.1415C10.3652 20.3807 10.4618 20.6061 10.6183 20.7625C10.7747 20.9189 10.9955 21.0202 11.2393 21.0156L19.1152 21.0156L19.1152 28.8914C19.1152 29.1306 19.2118 29.3561 19.3682 29.5125C19.5292 29.6735 19.7454 29.7701 19.9892 29.7655C20.4769 29.7655 20.8679 29.3745 20.8679 28.8868L20.8771 21.0202L28.753 21.0202C29.2406 21.0202 29.6317 20.6291 29.6317 20.1415Z" class="form__qty-btn-icon            "/></svg>			
+		</button>
+	</div>
+</div>			
+			</div>
+			<div class="form__cols cols    ">
+				<div class="form__item  is--qty  is--xs    ">
+	<div class="form__qty  is--xs        ">
+		<button type="button" class="form__qty-btn  is--xs        ">
+			<svg viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg"><path d="M40 20.1419C40 31.1876 31.0457 40.1419 20 40.1419C8.95431 40.1419 0 31.1876 0 20.1419C0 9.09618 8.95431 0.141876 20 0.141876C31.0457 0.141876 40 9.09618 40 20.1419Z" class="form__qty-btn-bg  is--xs        "/><path d="M28.753 19.2632C29.2406 19.2632 29.6317 19.6543 29.6317 20.1419C29.6317 20.6296 29.2406 21.0206 28.753 21.0206L20.8771 21.0206L19.1152 21.016L11.2393 21.016C10.9955 21.0206 10.7747 20.9194 10.6183 20.763C10.4618 20.6066 10.3652 20.3811 10.3652 20.1419C10.3652 19.6543 10.7563 19.2632 11.2439 19.2632H28.753Z" class="form__qty-btn-icon  is--xs        "/></svg>
+		</button>	
+		<input type="number" class="form__qty-input  is--xs        " value="1">
+		<button type="button" class="form__qty-btn  is--xs        ">
+			<svg viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg"><path d="M40 20.1419C40 31.1876 31.0457 40.1419 20 40.1419C8.95431 40.1419 0 31.1876 0 20.1419C0 9.09618 8.95431 0.141876 20 0.141876C31.0457 0.141876 40 9.09618 40 20.1419Z" class="form__qty-btn-bg  is--xs        "/><path d="M29.6317 20.1415C29.6317 19.6538 29.2406 19.2628 28.753 19.2628L20.8771 19.2628V11.3869C20.8771 10.8993 20.4861 10.5083 19.9984 10.5083C19.5108 10.5083 19.1198 10.8993 19.1198 11.3869V19.2628L11.2439 19.2628C10.7563 19.2628 10.3652 19.6538 10.3652 20.1415C10.3652 20.3807 10.4618 20.6061 10.6183 20.7625C10.7747 20.9189 10.9955 21.0202 11.2393 21.0156L19.1152 21.0156L19.1152 28.8914C19.1152 29.1306 19.2118 29.3561 19.3682 29.5125C19.5292 29.6735 19.7454 29.7701 19.9892 29.7655C20.4769 29.7655 20.8679 29.3745 20.8679 28.8868L20.8771 21.0202L28.753 21.0202C29.2406 21.0202 29.6317 20.6291 29.6317 20.1415Z" class="form__qty-btn-icon  is--xs        "/></svg>			
+		</button>
+	</div>
+</div>			
 			</div>
 			<div class="form__cols cols  is--radio    ">
 				<div class="form__item        ">
@@ -609,7 +660,7 @@
 </button>				
 			</div>
 		</div>	
-	</form> 
+	</form>
 </div>
 </div>
 <div style="margin-bottom: 100px; max-width: 785px;">
@@ -690,7 +741,7 @@
 	</form> 
 </div>
 </div>
-<div style="margin-bottom: 20px; max-width: 785px;">
+<div style="margin-bottom: 40px; max-width: 785px;">
 	<div class="form__block  is--reviews"  >
 	<div class="page-header__group  is--h4">
 	<div class="page-header__panel  is--h4">
@@ -734,8 +785,17 @@
 	</form> 
 </div> 
 </div>
-<div style="margin-bottom: 20px; max-width: 315px;">
-	
+<div style="max-width: 500px;">
+	<form action="/amadeus/search.html" class="form__item  is--search    ">
+	<div class="form__search    ">
+		<input type="text" class="form__search-input    " placeholder="Поиск по названию платья" >
+		<button type="submit" class="form__search-btn    ">
+			<svg class="icon-svg icon-icon-search" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#icon-search"></use>
+</svg>
+		</button>
+	</div>
+</form>
 </div> 
 		</div>
 		<div class="content-block__elem    " style="max-width: 755px">
@@ -746,26 +806,30 @@
 			<table class="table  table-bordered">
 				<thead>
 					<tr>
-						<th>Название услуги</th>
-						<th class="is--right">Стоимость</th>
+						<th>Lorem ipsum dolor.</th>
+						<th>Lorem ipsum.</th>
 					</tr>
 				</thead> 
 				<tbody> 
 					<tr> 
-						<td>Замена глухого окна на поворотно-откидную створку</td>
-						<td class="is--right">8 000 — 12 000 ₽</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi?</td>
+						<td>8&nbsp;000 — 12&nbsp;000&nbsp;₽</td>
 					</tr>
 					<tr> 
-						<td>Замена глухого окна на поворотно-откидную створку</td>
-						<td class="is--right">8 000 — 12 000 ₽</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi?</td>
+						<td>8&nbsp;000 — 12&nbsp;000&nbsp;₽</td>
 					</tr>
 					<tr> 
-						<td>Замена глухого окна на поворотно-откидную створку</td>
-						<td class="is--right">8 000 — 12 000 ₽</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi?</td>
+						<td>8&nbsp;000 — 12&nbsp;000&nbsp;₽</td>
 					</tr>
 					<tr> 
-						<td>Замена глухого окна на поворотно-откидную створку</td>
-						<td class="is--right">8 000 — 12 000 ₽</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi?</td>
+						<td>8&nbsp;000 — 12&nbsp;000&nbsp;₽</td>
+					</tr>
+					<tr> 
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi?</td>
+						<td>8&nbsp;000 — 12&nbsp;000&nbsp;₽</td>
 					</tr>
 				</tbody>
 			</table>
@@ -870,50 +934,50 @@
 	<div class="content-block__row row  is--gutter    ">
 		<div class="content-block__cols cols      is--grid-4">
 			<article class="card-item__card  is--news">	
-	<a href="{{block_link}}" class="card-item__preview  is--news">
+	<a href="/amadeus/news-card.html" class="card-item__preview  is--news">
 		<img src="/amadeus/img/temp/card-news-lock.jpg" alt="Трикотаж стройнит" class="img-responsive">
 		<div class="card-item__bg  is--news">
 			<div class="card-item__bg-view  is--news">Подробнее</div>
 		</div>
 	</a>
 	<time class="card-item__date  is--news" datetime="2018-05-30">30.05.2018</time>	
-	<h4 class="card-item__heading  is--news"><a href="{{block_link}}">Трикотаж стройнит</a></h4>
+	<h4 class="card-item__heading  is--news"><a href="/amadeus/news-card.html">Трикотаж стройнит</a></h4>
 </article>
 		</div>
 		<div class="content-block__cols cols      is--grid-4">
 			<article class="card-item__card  is--news">	
-	<a href="{{block_link}}" class="card-item__preview  is--news">
+	<a href="/amadeus/news-card.html" class="card-item__preview  is--news">
 		<img src="http://via.placeholder.com/500x325" alt="Black Friday — 2018 целых 10 дней!" class="img-responsive">
 		<div class="card-item__bg  is--news">
 			<div class="card-item__bg-view  is--news">Подробнее</div>
 		</div>
 	</a>
 	<time class="card-item__date  is--news" datetime="2018-03-27">27.03.2018</time>	
-	<h4 class="card-item__heading  is--news"><a href="{{block_link}}">Black Friday — 2018 целых 10 дней!</a></h4>
+	<h4 class="card-item__heading  is--news"><a href="/amadeus/news-card.html">Black Friday — 2018 целых 10 дней!</a></h4>
 </article>
 		</div>
 		<div class="content-block__cols cols      is--grid-4">
 			<article class="card-item__card  is--news">	
-	<a href="{{block_link}}" class="card-item__preview  is--news">
+	<a href="/amadeus/news-card.html" class="card-item__preview  is--news">
 		<img src="http://via.placeholder.com/500x325" alt="Предсезонные скидки" class="img-responsive">
 		<div class="card-item__bg  is--news">
 			<div class="card-item__bg-view  is--news">Подробнее</div>
 		</div>
 	</a>
 	<time class="card-item__date  is--news" datetime="2018-03-27">27.03.2018</time>	
-	<h4 class="card-item__heading  is--news"><a href="{{block_link}}">Предсезонные скидки</a></h4>
+	<h4 class="card-item__heading  is--news"><a href="/amadeus/news-card.html">Предсезонные скидки</a></h4>
 </article>
 		</div>
 		<div class="content-block__cols cols      is--grid-4">
 			<article class="card-item__card  is--news">	
-	<a href="{{block_link}}" class="card-item__preview  is--news">
+	<a href="/amadeus/news-card.html" class="card-item__preview  is--news">
 		<img src="http://via.placeholder.com/500x325" alt="Трикотаж стройнит" class="img-responsive">
 		<div class="card-item__bg  is--news">
 			<div class="card-item__bg-view  is--news">Подробнее</div>
 		</div>
 	</a>
 	<time class="card-item__date  is--news" datetime="2018-03-27">27.03.2018</time>	
-	<h4 class="card-item__heading  is--news"><a href="{{block_link}}">Трикотаж стройнит</a></h4>
+	<h4 class="card-item__heading  is--news"><a href="/amadeus/news-card.html">Трикотаж стройнит</a></h4>
 </article>
 		</div>
 	</div>
@@ -923,52 +987,52 @@
 	<div class="content-block__row row  is--gutter    ">
 		<div class="content-block__cols cols      is--grid-4">	
 			<div class="card-item__card  is--catalog">	
-	<a href="{{block_link}}" class="card-item__preview  is--catalog">
+	<a href="/amadeus/catalog-card.html" class="card-item__preview  is--catalog">
 		<img src="/amadeus/img/temp/card-catalog-lock.jpg" alt="Жакет" class="img-responsive">
 		<div class="card-item__bg  is--catalog">
 			<div class="card-item__bg-view  is--catalog">Подробнее</div>
 		</div>
 	</a>	
-	<div class="card-item__heading  is--catalog"><a href="{{block_link}}">Жакет</a></div>
+	<div class="card-item__heading  is--catalog"><a href="/amadeus/catalog-card.html">Жакет</a></div>
 	<div class="card-item__elem  is--cost  is--catalog">Цена:&nbsp;&nbsp;<span>1 950 ₽</span></div>
 	<div class="card-item__elem  is--status  is--catalog">Новинка</div>
 </div>
 		</div>
 		<div class="content-block__cols cols      is--grid-4">	
 			<div class="card-item__card  is--catalog">	
-	<a href="{{block_link}}" class="card-item__preview  is--catalog">
+	<a href="/amadeus/catalog-card.html" class="card-item__preview  is--catalog">
 		<img src="http://via.placeholder.com/500x690" alt="Жакет" class="img-responsive">
 		<div class="card-item__bg  is--catalog">
 			<div class="card-item__bg-view  is--catalog">Подробнее</div>
 		</div>
 	</a>	
-	<div class="card-item__heading  is--catalog"><a href="{{block_link}}">Жакет</a></div>
+	<div class="card-item__heading  is--catalog"><a href="/amadeus/catalog-card.html">Жакет</a></div>
 	<div class="card-item__elem  is--cost  is--catalog">Цена:&nbsp;&nbsp;<span>1 950 ₽</span></div>
 	<div class="card-item__elem  is--status  is--catalog">Скидка</div>
 </div>
 		</div>
 		<div class="content-block__cols cols      is--grid-4">	
 			<div class="card-item__card  is--catalog">	
-	<a href="{{block_link}}" class="card-item__preview  is--catalog">
+	<a href="/amadeus/catalog-card.html" class="card-item__preview  is--catalog">
 		<img src="/amadeus/img/temp/card-catalog-lock.jpg" alt="Жакет" class="img-responsive">
 		<div class="card-item__bg  is--catalog">
 			<div class="card-item__bg-view  is--catalog">Подробнее</div>
 		</div>
 	</a>	
-	<div class="card-item__heading  is--catalog"><a href="{{block_link}}">Жакет</a></div>
+	<div class="card-item__heading  is--catalog"><a href="/amadeus/catalog-card.html">Жакет</a></div>
 	<div class="card-item__elem  is--cost  is--catalog">Цена:&nbsp;&nbsp;<span>1 950 ₽</span></div>
 	<div class="card-item__elem  is--status  is--catalog">  </div>
 </div>
 		</div>
 		<div class="content-block__cols cols      is--grid-4">	
 			<div class="card-item__card  is--catalog">	
-	<a href="{{block_link}}" class="card-item__preview  is--catalog">
+	<a href="/amadeus/catalog-card.html" class="card-item__preview  is--catalog">
 		<img src="http://via.placeholder.com/500x690" alt="Жакет" class="img-responsive">
 		<div class="card-item__bg  is--catalog">
 			<div class="card-item__bg-view  is--catalog">Подробнее</div>
 		</div>
 	</a>	
-	<div class="card-item__heading  is--catalog"><a href="{{block_link}}">Жакет</a></div>
+	<div class="card-item__heading  is--catalog"><a href="/amadeus/catalog-card.html">Жакет</a></div>
 	<div class="card-item__elem  is--cost  is--catalog">Цена:&nbsp;&nbsp;<span>1 950 ₽</span></div>
 	<div class="card-item__elem  is--status  is--catalog">  </div>
 </div>
@@ -976,302 +1040,154 @@
 	</div>
 </div>
 <div style="margin-bottom: 100px;">
-	<h5 class="content-block__heading">Карточки media</h5>
-	<div class="content-block__row row  is--gutter  is--wrap    ">
-		<div class="content-block__cols cols      is--grid-3">
-			<a href="{{page.services_card}}" class="card-item__card  is--services">	
-	<div class="card-item__preview  is--services">	
-		<img src="http://via.placeholder.com/500x310" alt="Карточка" class="img-responsive">
-	</div>
-	<h5 class="card-item__heading  is--services">Карточка</h5>
-	<div class="card-item__bg  is--services">
-		<div class="card-item__view  is--services">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
+	<h5 class="content-block__heading">Карточки преимуществ</h5>
+	<div class="content-block__row row  is--gutter    ">
+		<div class="content-block__cols cols      is--grid-4">
+			<div class="card-item__card  is--adv">
+	<div class="card-item__preview  is--adv">
+		<svg class="icon-svg icon-icon-adv1" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#icon-adv1"></use>
 </svg>
+	</div>
+	<h5 class="card-item__heading  is--adv">Выгодные цены</h5>
+</div>
 		</div>
+		<div class="content-block__cols cols      is--grid-4">
+			<div class="card-item__card  is--adv">
+	<div class="card-item__preview  is--adv">
+		<svg class="icon-svg icon-icon-adv2" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#icon-adv2"></use>
+</svg>
+	</div>
+	<h5 class="card-item__heading  is--adv">Высокое качество продукции</h5>
+</div>
+		</div>
+		<div class="content-block__cols cols      is--grid-4">
+			<div class="card-item__card  is--adv">
+	<div class="card-item__preview  is--adv">
+		<svg class="icon-svg icon-icon-adv3" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#icon-adv3"></use>
+</svg>
+	</div>
+	<h5 class="card-item__heading  is--adv">Крупный производитель</h5>
+</div>
+		</div>
+		<div class="content-block__cols cols      is--grid-4">
+			<div class="card-item__card  is--adv">
+	<div class="card-item__preview  is--adv">
+		<svg class="icon-svg icon-icon-adv4" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#icon-adv4"></use>
+</svg>
+	</div>
+	<h5 class="card-item__heading  is--adv">Оригинальные модели</h5>
+</div>
+		</div>
+	</div>
+</div>
+<div style="margin-bottom: 100px;">
+	<h5 class="content-block__heading">Карточки личного кабинета</h5>
+	<div class="content-block__row row  is--gutter    ">
+		<div class="content-block__cols cols      is--grid-3">	
+			<a href="/amadeus/basket.html" class="cabinet__card-item">
+	<div class="cabinet__card-preview">
+		<img src="/amadeus/img/temp/card-cabinet-basket.jpg" srcset="/amadeus/img/temp/card-cabinet-basket-2x.jpg 2x" class="img-responsive" alt="">
+	</div>
+	<div class="cabinet__card-group">
+		<div class="cabinet__card-heading">Моя<br> корзина</div>
+		<div class="cabinet__card-heading-small">2 товара</div>
+		<div class="cabinet__card-cost"><span>3 150</span>&nbsp;₽</div>
+	</div>
+	<div class="cabinet__card-arrow">
+		<svg width="47" height="23" viewBox="0 0 47 23" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="11.5" r="11.5" class="cabinet__card-arrow-circle"/><path d="M34.3432 4.2983L40.7083 10.781C41.0972 11.1784 41.0972 11.8214 40.7084 12.2188L40.7071 12.2202L34.3432 18.7017C33.9526 19.0994 33.3195 19.0994 32.9289 18.7017C32.5384 18.304 32.5384 17.6591 32.9289 17.2614L37.5858 12.5185L1 12.5185C0.447716 12.5185 0 12.0625 0 11.5C0 10.9375 0.447717 10.4815 1 10.4815L37.5858 10.4815L32.9289 5.73864C32.5384 5.34091 32.5384 4.69604 32.9289 4.2983C32.9778 4.24859 33.0304 4.20508 33.0858 4.1678C33.3631 3.98136 33.7114 3.95028 34.0123 4.07458C34.1327 4.12429 34.2455 4.19887 34.3432 4.2983Z" class="cabinet__card-arrow-path"/></svg>
 	</div>
 </a>
 		</div>
 		<div class="content-block__cols cols      is--grid-3">	
-			<a href="{{page.services_card}}" class="card-item__card  is--services">	
-	<div class="card-item__preview  is--services">	
-		<img src="http://via.placeholder.com/500x310" alt="Карточка" class="img-responsive">
+			<a href="/amadeus/order.html" class="cabinet__card-item">
+	<div class="cabinet__card-preview">
+		<img src="/amadeus/img/temp/card-cabinet-order.jpg" srcset="/amadeus/img/temp/card-cabinet-order-2x.jpg 2x" class="img-responsive" alt="">
 	</div>
-	<h5 class="card-item__heading  is--services">Карточка</h5>
-	<div class="card-item__bg  is--services">
-		<div class="card-item__view  is--services">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>
-		</div>
+	<div class="cabinet__card-group">
+		<div class="cabinet__card-heading">Мои<br> заказы</div>
+		<div class="cabinet__card-heading-small">1 заказ</div>
+		<div class="cabinet__card-cost"><span>9 150</span>&nbsp;₽</div>
 	</div>
-</a>
-		</div>
-		<div class="content-block__cols cols      is--grid-3">	
-			<a href="{{page.services_card}}" class="card-item__card  is--services">	
-	<div class="card-item__preview  is--services">	
-		<img src="http://via.placeholder.com/500x310" alt="Карточка" class="img-responsive">
-	</div>
-	<h5 class="card-item__heading  is--services">Карточка</h5>
-	<div class="card-item__bg  is--services">
-		<div class="card-item__view  is--services">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>
-		</div>
+	<div class="cabinet__card-arrow">
+		<svg width="47" height="23" viewBox="0 0 47 23" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="11.5" r="11.5" class="cabinet__card-arrow-circle"/><path d="M34.3432 4.2983L40.7083 10.781C41.0972 11.1784 41.0972 11.8214 40.7084 12.2188L40.7071 12.2202L34.3432 18.7017C33.9526 19.0994 33.3195 19.0994 32.9289 18.7017C32.5384 18.304 32.5384 17.6591 32.9289 17.2614L37.5858 12.5185L1 12.5185C0.447716 12.5185 0 12.0625 0 11.5C0 10.9375 0.447717 10.4815 1 10.4815L37.5858 10.4815L32.9289 5.73864C32.5384 5.34091 32.5384 4.69604 32.9289 4.2983C32.9778 4.24859 33.0304 4.20508 33.0858 4.1678C33.3631 3.98136 33.7114 3.95028 34.0123 4.07458C34.1327 4.12429 34.2455 4.19887 34.3432 4.2983Z" class="cabinet__card-arrow-path"/></svg>
 	</div>
 </a>
 		</div>
 		<div class="content-block__cols cols      is--grid-3">	
-			<a href="{{page.services_card}}" class="card-item__card  is--services">	
-	<div class="card-item__preview  is--services">	
-		<img src="http://via.placeholder.com/500x310" alt="Карточка" class="img-responsive">
+			<a href="/amadeus/profile.html" class="cabinet__card-item">
+	<div class="cabinet__card-preview">
+		<img src="/amadeus/img/temp/card-cabinet-profile.jpg" srcset="/amadeus/img/temp/card-cabinet-profile-2x.jpg 2x" class="img-responsive" alt="">
 	</div>
-	<h5 class="card-item__heading  is--services">Карточка</h5>
-	<div class="card-item__bg  is--services">
-		<div class="card-item__view  is--services">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>
+	<div class="cabinet__card-group">
+		<div class="cabinet__card-heading  is--contacts">Профиль</div>
+		<div class="cabinet__card-fio">Ирина Лаптева</div>
+		<div class="cabinet__card-contacts">
+			<div class="cabinet__card-contacts-icon"><svg class="icon-svg icon-contacts-email" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#contacts-email"></use>
+</svg></div>
+			<span>Irina@mail.ru</span>
+		</div>
+		<div class="cabinet__card-contacts">
+			<div class="cabinet__card-contacts-icon"><svg class="icon-svg icon-contacts-tel" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#contacts-tel"></use>
+</svg></div>
+			<span>+7 (960) 855-25-55</span> 
 		</div>
 	</div>
-</a>
-		</div>
-		<div class="content-block__cols cols      is--grid-3">	
-			<a href="{{page.services_card}}" class="card-item__card  is--services">	
-	<div class="card-item__preview  is--services">	
-		<img src="http://via.placeholder.com/500x310" alt="Карточка" class="img-responsive">
-	</div>
-	<h5 class="card-item__heading  is--services">Карточка</h5>
-	<div class="card-item__bg  is--services">
-		<div class="card-item__view  is--services">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>
-		</div>
+	<div class="cabinet__card-arrow">
+		<svg width="47" height="23" viewBox="0 0 47 23" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="11.5" r="11.5" class="cabinet__card-arrow-circle"/><path d="M34.3432 4.2983L40.7083 10.781C41.0972 11.1784 41.0972 11.8214 40.7084 12.2188L40.7071 12.2202L34.3432 18.7017C33.9526 19.0994 33.3195 19.0994 32.9289 18.7017C32.5384 18.304 32.5384 17.6591 32.9289 17.2614L37.5858 12.5185L1 12.5185C0.447716 12.5185 0 12.0625 0 11.5C0 10.9375 0.447717 10.4815 1 10.4815L37.5858 10.4815L32.9289 5.73864C32.5384 5.34091 32.5384 4.69604 32.9289 4.2983C32.9778 4.24859 33.0304 4.20508 33.0858 4.1678C33.3631 3.98136 33.7114 3.95028 34.0123 4.07458C34.1327 4.12429 34.2455 4.19887 34.3432 4.2983Z" class="cabinet__card-arrow-path"/></svg>
 	</div>
 </a>
 		</div>
 	</div>
 </div>
 <div style="margin-bottom: 100px;">
-	<h5 class="content-block__heading">Карточки портфолио</h5>
-	<div class="content-block__row row  is--gutter  is--wrap    ">
-		<div class="content-block__cols cols      is--grid-4">
-			<a href="{{page.portfolio_card}}" class="card-item__card  is--portfolio">	
-	<div class="card-item__preview  is--portfolio">	
-		<img src="http://via.placeholder.com/400x540" alt="Карточка" class="img-responsive">
-	</div>
-	<h5 class="card-item__heading  is--portfolio">Карточка</h5>
-	<div class="card-item__bg  is--portfolio">
-		<div class="card-item__view  is--portfolio">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
+	<h5 class="content-block__heading">Результаты поиска</h5>
+	<div class="card-item__card  is--search">	
+	<a href="/amadeus/catalog-card.html" class="card-item__preview  is--search">
+		<img src="/amadeus/img/temp/card-catalog-lock.jpg" alt="<span>Платье</span> Д-1245" class="img-responsive">
+		<div class="card-item__bg  is--search">
+			<div class="card-item__bg-view  is--search">
+			<div class="card-item__bg-icon  is--search">
+				<svg class="icon-svg icon-icon-add" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#icon-add"></use>
 </svg>
+			</div>
+			</div>
 		</div>
+	</a>	
+	<div class="card-item__elem-group  is--search">
+		<h4 class="card-item__heading  is--search"><a href="/amadeus/catalog-card.html"><span>Платье</span> Д-1245</a></h4>
+		<div class="card-item__note  is--search">Модное <span>платье</span> в стиле бохо, украшено крупным цветком ручной работы из лент и трикотажа. Модель украшена декоративной ...</div>
 	</div>
-</a>
-		</div>
-		<div class="content-block__cols cols      is--grid-4">
-			<a href="{{page.portfolio_card}}" class="card-item__card  is--portfolio">	
-	<div class="card-item__preview  is--portfolio">	
-		<img src="http://via.placeholder.com/400x540" alt="Карточка" class="img-responsive">
-	</div>
-	<h5 class="card-item__heading  is--portfolio">Карточка</h5>
-	<div class="card-item__bg  is--portfolio">
-		<div class="card-item__view  is--portfolio">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
+</div>
+	<div class="card-item__card  is--search">	
+	<a href="/amadeus/catalog-card.html" class="card-item__preview  is--search">
+		<img src="/amadeus/img/temp/card-catalog-lock.jpg" alt="<span>Платье</span> Д-1245" class="img-responsive">
+		<div class="card-item__bg  is--search">
+			<div class="card-item__bg-view  is--search">
+			<div class="card-item__bg-icon  is--search">
+				<svg class="icon-svg icon-icon-add" role="img">
+	<use xlink:href="/amadeus/img/svg/sprite.svg#icon-add"></use>
 </svg>
-		</div>
-	</div>
-</a>
-		</div>
-		<div class="content-block__cols cols      is--grid-4">
-			<a href="{{page.portfolio_card}}" class="card-item__card  is--portfolio">	
-	<div class="card-item__preview  is--portfolio">	
-		<img src="http://via.placeholder.com/400x540" alt="Карточка" class="img-responsive">
-	</div>
-	<h5 class="card-item__heading  is--portfolio">Карточка</h5>
-	<div class="card-item__bg  is--portfolio">
-		<div class="card-item__view  is--portfolio">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>
-		</div>
-	</div>
-</a>
-		</div>
-		<div class="content-block__cols cols      is--grid-4">
-			<a href="{{page.portfolio_card}}" class="card-item__card  is--portfolio">	
-	<div class="card-item__preview  is--portfolio">	
-		<img src="http://via.placeholder.com/400x540" alt="Карточка" class="img-responsive">
-	</div>
-	<h5 class="card-item__heading  is--portfolio">Карточка</h5>
-	<div class="card-item__bg  is--portfolio">
-		<div class="card-item__view  is--portfolio">
-			<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>
-		</div>
-	</div>
-</a>
-		</div>
-	</div>
-</div>
-<div style="margin-bottom: 100px;  max-width: 1015px;">
-	<h5 class="content-block__heading">Карточки фотогалереи</h5>
-	<div class="content-block__slick" data-slider-slick="slick-gallery">
-		<div class="content-block__slick-item  is--gallery">
-			<div class="card-item__card  is--gallery">
-	<a href="/amadeus/img/temp/card-gallery-item1.jpg" data-fancybox="gallery" class="card-item__preview  is--gallery">
-		<img src="http://via.placeholder.com/400x400" alt="" class="img-responsive">
-		<div class="card-item__bg  is--gallery">
-			<div class="card-item__view  is--gallery">
-				<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>			
+			</div>
 			</div>
 		</div>
-	</a>
-</div>
-		</div>
-		<div class="content-block__slick-item  is--gallery">
-			<div class="card-item__card  is--gallery">
-	<a href="/amadeus/img/temp/card-gallery-item1.jpg" data-fancybox="gallery" class="card-item__preview  is--gallery">
-		<img src="http://via.placeholder.com/400x400" alt="" class="img-responsive">
-		<div class="card-item__bg  is--gallery">
-			<div class="card-item__view  is--gallery">
-				<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>			
-			</div>
-		</div>
-	</a>
-</div>
-		</div>
-		<div class="content-block__slick-item  is--gallery">
-			<div class="card-item__card  is--gallery">
-	<a href="/amadeus/img/temp/card-gallery-item1.jpg" data-fancybox="gallery" class="card-item__preview  is--gallery">
-		<img src="http://via.placeholder.com/400x400" alt="" class="img-responsive">
-		<div class="card-item__bg  is--gallery">
-			<div class="card-item__view  is--gallery">
-				<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>			
-			</div>
-		</div>
-	</a>
-</div>
-		</div>
-		<div class="content-block__slick-item  is--gallery">
-			<div class="card-item__card  is--gallery">
-	<a href="/amadeus/img/temp/card-gallery-item1.jpg" data-fancybox="gallery" class="card-item__preview  is--gallery">
-		<img src="http://via.placeholder.com/400x400" alt="" class="img-responsive">
-		<div class="card-item__bg  is--gallery">
-			<div class="card-item__view  is--gallery">
-				<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>			
-			</div>
-		</div>
-	</a>
-</div>
-		</div>
-		<div class="content-block__slick-item  is--gallery">
-			<div class="card-item__card  is--gallery">
-	<a href="/amadeus/img/temp/card-gallery-item1.jpg" data-fancybox="gallery" class="card-item__preview  is--gallery">
-		<img src="http://via.placeholder.com/400x400" alt="" class="img-responsive">
-		<div class="card-item__bg  is--gallery">
-			<div class="card-item__view  is--gallery">
-				<svg class="icon-svg icon-view" role="img">
-	<use xlink:href="/amadeus/img/svg/sprite.svg#view"></use>
-</svg>			
-			</div>
-		</div>
-	</a>
-</div>
-		</div>
+	</a>	
+	<div class="card-item__elem-group  is--search">
+		<h4 class="card-item__heading  is--search"><a href="/amadeus/catalog-card.html"><span>Платье</span> Д-1245</a></h4>
+		<div class="card-item__note  is--search">Модное <span>платье</span> в стиле бохо, украшено крупным цветком ручной работы из лент и трикотажа. Модель украшена декоративной ...</div>
 	</div>
 </div>
-<div style="margin-bottom: 100px;  max-width: 1015px;">
-	<h5 class="content-block__heading">Карточки отзывов</h5>
-	<div class="content-block__row row  is--gutter  is--gap-lg  is--wrap    ">
-		<div class="content-block__cols cols      is--grid-1">
-			<article class="card-item__card  is--reviews">
-	<div class="card-item__heading-block  is--reviews">
-		<h4 class="card-item__heading  is--reviews">Кирилл Афанасьев</h4>
-		<div class="card-item__line  is--reviews"></div>
-		<time class="card-item__date  is--reviews" datetime="2018-03-27">20 сентября 2018г</time>
-	</div>
-	<div class="card-item__note  is--reviews">«Не так давно получили квартиру и обратились в ОкнаStory с тем, чтобы они выполнили установку пвх окон в нашем новом доме. Инженер, который делал замеры, дал немало дельных советов по выбору материалов и фурнитуры. Мы решили прислушаться, и не ошиблись. Довольно быстро заказ был исполнен и за два дня нам застеклили всю квартиру, дав на прощание советы по грамотной эксплуатации окон. В целом мы довольны и сроками и ценой, тем более что получили 10% скидку, что в нашем положении вылилось в приличную сумму. Спасибо за профессиональную работу и неравнодушное отношение».</div>
-</article>
-		</div>
-		<div class="content-block__cols cols      is--grid-1">
-			<article class="card-item__card  is--reviews">
-	<div class="card-item__heading-block  is--reviews">
-		<h4 class="card-item__heading  is--reviews">Кирилл Афанасьев</h4>
-		<div class="card-item__line  is--reviews"></div>
-		<time class="card-item__date  is--reviews" datetime="2018-03-27">20 сентября 2018г</time>
-	</div>
-	<div class="card-item__note  is--reviews">«Не так давно получили квартиру и обратились в ОкнаStory с тем, чтобы они выполнили установку пвх окон в нашем новом доме. Инженер, который делал замеры, дал немало дельных советов по выбору материалов и фурнитуры. Мы решили прислушаться, и не ошиблись. Довольно быстро заказ был исполнен и за два дня нам застеклили всю квартиру, дав на прощание советы по грамотной эксплуатации окон. В целом мы довольны и сроками и ценой, тем более что получили 10% скидку, что в нашем положении вылилось в приличную сумму. Спасибо за профессиональную работу и неравнодушное отношение».</div>
-</article>
-		</div>
-	</div>
 </div>
 		</div>
 	</div>
 	<div class="content-block__elem    ">
-		<div class="container">
-	<h4 class="content-block__heading">Блоки форм</h4>
-</div>
-<div style="margin-bottom: 20px;">
-	<div class="form__block  is--block"  style="background-image: url(/amadeus/img/temp/bg-form.jpg)">
-	<div class="form__container container  is--block"  >
-		<div class="page-header__group  is--h2  align--center">
-	<div class="page-header__panel  is--h2  align--center">
-	<h2 class="page-header__heading  is--h2  align--center"><span>Form block default</span></h2>	
-	<div class="page-header__heading-small  is--h2  align--center">Свяжитесь с нами</div>		
-</div>
-</div>
-		<form action="#" class="form__panel  is--block"  data-validation>
-			<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
-			<input type="hidden" name="f[Форма: Form block default]">
-			<div class="form__row row  is--block">
-				<div class="form__cols cols  is--name  is--block">
-					<div class="form__item  is--block  is--name">
-	<input type="text" class="form__control form-control validate[required, custom[onlyLetterSp]]  is--block    " id="name[name]" name="f[Имя]" placeholder="Имя">
-</div>
-				</div>
-				<div class="form__cols cols  is--tel  is--block">
-					<div class="form__item  is--block  is--tel">
-	<input type="tel" class="form__control form-control validate[required, custom[phone]]  is--block    " id="tel[tel]" name="f[Номер телефона]" placeholder="Номер телефона">
-</div>
-				</div>
-				<div class="form__cols cols  is--email  is--block">
-					<div class="form__item  is--block  is--email">
-	<input type="email" class="form__control form-control validate[required, custom[email]]  is--block    " id="email[email]" name="f[E-mail]" placeholder="E-mail">
-</div>
-				</div>
-				<div class="form__cols cols  is--btn  is--block">
-					<button type="submit" class="btn__item    ">
-	<span class="btn__name">Отправить</span>
-</button>				
-				</div>
-				<div class="form__cols cols  is--agreement  is--block">
-					<div class="form__item  is--agreement  is--block    ">
-	<input type="hidden" name="f[Согласие на обработку персональных данных]" value="Да">
-	<div class="form__text  is--agreement  is--block    ">	
-		Нажимая на кнопку «Отправить», Вы соглашаетесь с правилами обработки <a href='/amadeus/agreement.html' target='_blank'>персональных данных</a>
-	</div>	
-</div>		
-				</div>
-			</div>	
-		</form> 
-	</div>
-</div>
-</div>
+		
 	</div>
 </main>
 		<footer class="footer__block">	

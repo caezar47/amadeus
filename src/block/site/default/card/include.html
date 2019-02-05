@@ -8,7 +8,7 @@
 				block_prefix="card-item__" 
 				block_mod="is--news"
 				block_preview="{{url-path-img}}/temp/card-news-lock.jpg"
-				block_preview_2x="{{url-path-img}}/temp/card-news-lock-2x.jpg"
+				block_link="{{page.news_card}}"
 				block_heading="Трикотаж стройнит"
 				block_date="30.05.2018"
 				block_date_iso="2018-05-30"
@@ -20,7 +20,7 @@
 				block_prefix="card-item__" 
 				block_mod="is--news"
 				block_preview="http://via.placeholder.com/500x325"
-				block_preview_2x="http://via.placeholder.com/1000x650"
+				block_link="{{page.news_card}}"
 				block_heading="Black Friday — 2018 целых 10 дней!"
 				block_date="27.03.2018"
 				block_date_iso="2018-03-27"
@@ -32,7 +32,7 @@
 				block_prefix="card-item__" 
 				block_mod="is--news"
 				block_preview="http://via.placeholder.com/500x325"
-				block_preview_2x="http://via.placeholder.com/1000x650"
+				block_link="{{page.news_card}}"
 				block_heading="Предсезонные скидки"
 				block_date="27.03.2018"
 				block_date_iso="2018-03-27"
@@ -44,7 +44,7 @@
 				block_prefix="card-item__" 
 				block_mod="is--news"
 				block_preview="http://via.placeholder.com/500x325"
-				block_preview_2x="http://via.placeholder.com/1000x650"
+				block_link="{{page.news_card}}"
 				block_heading="Трикотаж стройнит"
 				block_date="27.03.2018"
 				block_date_iso="2018-03-27"
@@ -61,7 +61,7 @@
 				block_prefix="card-item__" 
 				block_mod="is--catalog"
 				block_preview="{{url-path-img}}/temp/card-catalog-lock.jpg"
-				block_preview_2x="{{url-path-img}}/temp/card-catalog-lock-2x.jpg"
+				block_link="{{page.catalog_card}}"
 				block_heading="Жакет"
 				block_cost="1 950"
 				block_status="Новинка"
@@ -73,7 +73,7 @@
 				block_prefix="card-item__" 
 				block_mod="is--catalog"
 				block_preview="http://via.placeholder.com/500x690"
-				block_preview_2x="http://via.placeholder.com/1000x1380"
+				block_link="{{page.catalog_card}}"
 				block_heading="Жакет"
 				block_cost="1 950"
 				block_status="Скидка"
@@ -85,7 +85,7 @@
 				block_prefix="card-item__" 
 				block_mod="is--catalog"
 				block_preview="{{url-path-img}}/temp/card-catalog-lock.jpg"
-				block_preview_2x="{{url-path-img}}/temp/card-catalog-lock-2x.jpg"
+				block_link="{{page.catalog_card}}"
 				block_heading="Жакет"
 				block_cost="1 950"
 				block_status="  "
@@ -97,7 +97,7 @@
 				block_prefix="card-item__" 
 				block_mod="is--catalog"
 				block_preview="http://via.placeholder.com/500x690"
-				block_preview_2x="http://via.placeholder.com/1000x1380"
+				block_link="{{page.catalog_card}}"
 				block_heading="Жакет"
 				block_cost="1 950"
 				block_status="  "
@@ -106,186 +106,111 @@
 	</div>
 </div>
 <div style="margin-bottom: 100px;">
-	<h5 class="{{block_prefix}}heading">Карточки media</h5>
-	<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">
+	<h5 class="{{block_prefix}}heading">Карточки преимуществ</h5>
+	<div class="{{content_prefix}}row row  is--gutter  {{content_mod}}">
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
 			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
+				tpl="/src/block/site/default/card/card-adv.html"
 				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
+				block_mod="is--adv"
+				block_preview="icon-adv1"
+				block_heading="Выгодные цены"
 			]]
 		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
 			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
+				tpl="/src/block/site/default/card/card-adv.html"
 				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
+				block_mod="is--adv"
+				block_preview="icon-adv2"
+				block_heading="Высокое качество продукции"
 			]]
 		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
 			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
+				tpl="/src/block/site/default/card/card-adv.html"
 				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
+				block_mod="is--adv"
+				block_preview="icon-adv3"
+				block_heading="Крупный производитель"
 			]]
 		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
 			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
+				tpl="/src/block/site/default/card/card-adv.html"
 				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--services"
-				block_preview="http://via.placeholder.com/500x310"
-				block_heading="Карточка"
-				block_link="{{page.services_card}}"
+				block_mod="is--adv"
+				block_preview="icon-adv4"
+				block_heading="Оригинальные модели"
 			]]
 		</div>
 	</div>
 </div>
 <div style="margin-bottom: 100px;">
-	<h5 class="{{block_prefix}}heading">Карточки портфолио</h5>
-	<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--portfolio"
-				block_link="{{page.portfolio_card}}"
-				block_preview="http://via.placeholder.com/400x540"
-				block_heading="Карточка"
+	<h5 class="{{block_prefix}}heading">Карточки личного кабинета</h5>
+	<div class="{{content_prefix}}row row  is--gutter  {{content_mod}}">
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
+			[[azbntple 						
+				tpl="/src/block/site/default/cabinet/card.html"
+				block_prefix="cabinet__card-" 
+				block_mod="  "
+				block_link="{{page.basket}}"
+				block_preview="{{url-path-img}}/temp/card-cabinet-basket.jpg"
+				block_preview_2x="{{url-path-img}}/temp/card-cabinet-basket-2x.jpg"
+				block_heading="Моя<br> корзина"
+				block_heading_small="2 товара"
+				block_cost="3 150"
 			]]
 		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--portfolio"
-				block_link="{{page.portfolio_card}}"
-				block_preview="http://via.placeholder.com/400x540"
-				block_heading="Карточка"
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
+			[[azbntple 						
+				tpl="/src/block/site/default/cabinet/card.html"
+				block_prefix="cabinet__card-" 
+				block_mod="  "
+				block_link="{{page.order}}"
+				block_preview="{{url-path-img}}/temp/card-cabinet-order.jpg"
+				block_preview_2x="{{url-path-img}}/temp/card-cabinet-order-2x.jpg"
+				block_heading="Мои<br> заказы"
+				block_heading_small="1 заказ"
+				block_cost="9 150"
 			]]
 		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--portfolio"
-				block_link="{{page.portfolio_card}}"
-				block_preview="http://via.placeholder.com/400x540"
-				block_heading="Карточка"
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-4">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-media.html"
-				block_prefix="card-item__" 
-				block_mod="is--portfolio"
-				block_link="{{page.portfolio_card}}"
-				block_preview="http://via.placeholder.com/400x540"
-				block_heading="Карточка"
-			]]
-		</div>
-	</div>
-</div>
-<div style="margin-bottom: 100px;  max-width: 1015px;">
-	<h5 class="{{block_prefix}}heading">Карточки фотогалереи</h5>
-	<div class="{{block_prefix}}slick" data-slider-slick="slick-gallery">
-		<div class="{{block_prefix}}slick-item  is--gallery">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-gallery.html"
-				block_prefix="card-item__" 
-				block_mod="is--gallery"
-				block_fancy="gallery"
-				block_preview_fancy="{{url-path-img}}/temp/card-gallery-item1.jpg"
-				block_preview="http://via.placeholder.com/400x400"
-			]]
-		</div>
-		<div class="{{block_prefix}}slick-item  is--gallery">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-gallery.html"
-				block_prefix="card-item__" 
-				block_mod="is--gallery"
-				block_fancy="gallery"
-				block_preview_fancy="{{url-path-img}}/temp/card-gallery-item1.jpg"
-				block_preview="http://via.placeholder.com/400x400"
-			]]
-		</div>
-		<div class="{{block_prefix}}slick-item  is--gallery">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-gallery.html"
-				block_prefix="card-item__" 
-				block_mod="is--gallery"
-				block_fancy="gallery"
-				block_preview_fancy="{{url-path-img}}/temp/card-gallery-item1.jpg"
-				block_preview="http://via.placeholder.com/400x400"
-			]]
-		</div>
-		<div class="{{block_prefix}}slick-item  is--gallery">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-gallery.html"
-				block_prefix="card-item__" 
-				block_mod="is--gallery"
-				block_fancy="gallery"
-				block_preview_fancy="{{url-path-img}}/temp/card-gallery-item1.jpg"
-				block_preview="http://via.placeholder.com/400x400"
-			]]
-		</div>
-		<div class="{{block_prefix}}slick-item  is--gallery">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-gallery.html"
-				block_prefix="card-item__" 
-				block_mod="is--gallery"
-				block_fancy="gallery"
-				block_preview_fancy="{{url-path-img}}/temp/card-gallery-item1.jpg"
-				block_preview="http://via.placeholder.com/400x400"
+		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-3">	
+			[[azbntple 						
+				tpl="/src/block/site/default/cabinet/card-contacts.html"
+				block_prefix="cabinet__card-" 
+				block_mod="  "
+				block_link="{{page.profile}}"
+				block_preview="{{url-path-img}}/temp/card-cabinet-profile.jpg"
+				block_preview_2x="{{url-path-img}}/temp/card-cabinet-profile-2x.jpg"
+				block_heading="Профиль"
+				block_fio="Ирина Лаптева"
+				block_email="Irina@mail.ru"
+				block_tel="+7 (960) 855-25-55"
 			]]
 		</div>
 	</div>
 </div>
-<div style="margin-bottom: 100px;  max-width: 1015px;">
-	<h5 class="{{block_prefix}}heading">Карточки отзывов</h5>
-	<div class="{{content_prefix}}row row  is--gutter  is--gap-lg  is--wrap  {{content_mod}}">
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-1">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-reviews.html"
-				block_prefix="card-item__" 
-				block_mod="is--reviews"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Кирилл Афанасьев"
-				block_date="20 сентября 2018г"
-				block_date_iso="2018-03-27"
-				block_note="«Не так давно получили квартиру и обратились в ОкнаStory с тем, чтобы они выполнили установку пвх окон в нашем новом доме. Инженер, который делал замеры, дал немало дельных советов по выбору материалов и фурнитуры. Мы решили прислушаться, и не ошиблись. Довольно быстро заказ был исполнен и за два дня нам застеклили всю квартиру, дав на прощание советы по грамотной эксплуатации окон. В целом мы довольны и сроками и ценой, тем более что получили 10% скидку, что в нашем положении вылилось в приличную сумму. Спасибо за профессиональную работу и неравнодушное отношение»."
-			]]
-		</div>
-		<div class="{{content_prefix}}cols cols  {{content_mod}}  is--grid-1">
-			[[azbntple 
-				tpl="/src/block/site/default/card/card-reviews.html"
-				block_prefix="card-item__" 
-				block_mod="is--reviews"
-				block_preview="http://via.placeholder.com/500x265"
-				block_heading="Кирилл Афанасьев"
-				block_date="20 сентября 2018г"
-				block_date_iso="2018-03-27"
-				block_note="«Не так давно получили квартиру и обратились в ОкнаStory с тем, чтобы они выполнили установку пвх окон в нашем новом доме. Инженер, который делал замеры, дал немало дельных советов по выбору материалов и фурнитуры. Мы решили прислушаться, и не ошиблись. Довольно быстро заказ был исполнен и за два дня нам застеклили всю квартиру, дав на прощание советы по грамотной эксплуатации окон. В целом мы довольны и сроками и ценой, тем более что получили 10% скидку, что в нашем положении вылилось в приличную сумму. Спасибо за профессиональную работу и неравнодушное отношение»."
-			]]
-		</div>
-	</div>
+<div style="margin-bottom: 100px;">
+	<h5 class="{{block_prefix}}heading">Результаты поиска</h5>
+	[[azbntple 
+		tpl="/src/block/site/default/card/card-search.html"
+		block_prefix="card-item__" 
+		block_mod="is--search"
+		block_link="{{page.catalog_card}}"
+		block_preview="{{url-path-img}}/temp/card-catalog-lock.jpg"
+		block_preview_2x="{{url-path-img}}/temp/card-catalog-lock-2x.jpg"
+		block_heading="<span>Платье</span> Д-1245"
+		block_note="Модное <span>платье</span> в стиле бохо, украшено крупным цветком ручной работы из лент и трикотажа. Модель украшена декоративной ..."
+	]]
+	[[azbntple 
+		tpl="/src/block/site/default/card/card-search.html"
+		block_prefix="card-item__" 
+		block_mod="is--search"
+		block_link="{{page.catalog_card}}"
+		block_preview="{{url-path-img}}/temp/card-catalog-lock.jpg"
+		block_preview_2x="{{url-path-img}}/temp/card-catalog-lock-2x.jpg"
+		block_heading="<span>Платье</span> Д-1245"
+		block_note="Модное <span>платье</span> в стиле бохо, украшено крупным цветком ручной работы из лент и трикотажа. Модель украшена декоративной ..."
+	]]
 </div>
