@@ -12,9 +12,9 @@
 		"clock":"пн-пт с 9:00 до 18:00",  
 		"address":"г.&nbsp;Орёл, ул.&nbsp;Пионерская д.&nbsp;14",
 		"ip":"ИП Иванова И.В.",
-		"map_center_coord":"[52.9781, 36.0570]",
+		"map_center_coord":"52.978106, 36.056877",
 		"map_zoom":"18",
-		"map_point_coord":"[52.978106, 36.056877]",
+		"map_point_coord":"52.978106, 36.056877",
 		"map_point_heading":"Склад интернет-магазина Amadeus"
 	},
 	"soc":{
@@ -24,7 +24,7 @@
 		"yb":"https://www.youtube.com/channel/UCqfZcP6JV8cmDVl98FnGu1Q/",
 		"tw":"https://twitter.com/",
 		"tg":"tg://resolve?domain=amadeusfamily",
-		"vider":"viber://chat?number=79092258887",
+		"viber":"viber://chat?number=79092258887",
 		"wa":"https://wa.me/79092258887",
 		"inst":"https://www.instagram.com/amadeus_family/"
 	},

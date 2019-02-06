@@ -40,4 +40,18 @@ if(twoGis_cont.length) {
 			}
 		}
 	});
+	$(document.body).on('click.azbn7', '[data-office]', null, function(event){
+		event.preventDefault();
+		var btn = $(this);
+		var coord = btn.attr('data-coord');
+		var coord_arr = coord.split(',');
+		console.dir(coord_arr);
+		var lat = parseFloat((coord_arr[0] || '').trim());
+		var lng = parseFloat((coord_arr[1] || '').trim());
+		$('[data-office]').removeClass('is--active');
+		$(this).addClass('is--active');
+		map.setView(
+			[lat,  lng]
+		);
+	});
 }
