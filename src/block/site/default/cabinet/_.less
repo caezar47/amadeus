@@ -51,6 +51,7 @@
 			letter-spacing: 1px;
 			font-size: @b-fs - 2;
 			padding-left: 15px; 
+			color: @white;
 		}
 		//hamburger
 		&-btn-hamb{
@@ -91,12 +92,14 @@
 			position: relative;
 			height: ~"calc(100% - @{aside_height_device})";
 			overflow: auto;
-			padding: 5px 15px;
+			padding: 15px 15px;
+			background-color: @white;
 			@media @media-point-screen-lg {
 				overflow: visible;
 				//padding: 4vw 4.6vw;
 				padding: 2.8vw 1.75vw;
 				height: auto;
+				background-color: transparent;
 			}
 			@media @media-point-lg {
 				//padding: 4vw 2.3vw;
@@ -129,12 +132,13 @@
 				position: relative;
 				display: block;
 				font-weight: 700;
-				color: @cabinet_nav_color;
+				//color: @cabinet_nav_color;
 				transition: @trs-site;
 				letter-spacing: 0.5px;
 				padding: 10px 20px 10px 45px;
 				@media @media-point-device-lg {display: inline-block;}
 				@media @media-point-screen {
+					color: @cabinet_nav_color;
 					padding: 10px 3.2vw 10px 45px;
 					//color: @black-61;
 				}
@@ -226,7 +230,7 @@
 		&-btn{
 			.btn__item.is--line{
 				@media @media-point-device-lg {
-					background-color: @cabinet_nav_bg_device;
+					//background-color: @cabinet_nav_bg_device;
 				}
 			}
 		}
