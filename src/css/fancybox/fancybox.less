@@ -67,7 +67,7 @@
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
   color: #ddd;
-  background-color: rgba(30, 30, 30, 0.7);
+  background: rgba(30, 30, 30, 0.6); 
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -155,7 +155,7 @@
   width: 80%;
   min-height: 80%;
   @media @media-point-screen {
-    height: ~"calc(100% - 88px)";
+	height: ~"calc(100% - 88px)";
   }
   vertical-align: middle;
   line-height: normal;
@@ -343,114 +343,98 @@
 
 /* Buttons */
 .fancybox-button {
-  display: inline-block;
-  position: relative;
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  cursor: pointer;
-  background: transparent;
-  color: #fff;
-  box-sizing: border-box;
-  vertical-align: top;
-  outline: none; 
-  //
+	display: inline-block;
+	position: relative;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+	background-color: @info;
+	color: @primary;
+	box-sizing: border-box;
+	vertical-align: top;
+	outline: none;
+	transition: @trs-site;
 
-  &[data-fancybox-next],
-  &[data-fancybox-previous]{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 99994;
-  }
+	&[data-fancybox-next],
+	&[data-fancybox-previous]{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 99994;
+	}
+	&::before,
+	&::after {
+		content: '';
+		display: inline-block; 
+		position: absolute;
+		pointer-events: none;
+		border-color: @white;
+		background-color: currentColor;
+		color: currentColor;
+		opacity: 0.9;
+		box-sizing: border-box;
+	}
+	&::after {		
+		top: 50%;
+		width: 14px;
+		height: 14px;
+	}
+
+	&:hover{
+		background-color: @primary;
+		color: @white;
+	}
+	&--disabled {
+		cursor: default;
+		pointer-events: none; 
+		&::before,
+		&::after {
+			opacity: 0.5;
+		}
+	}
+	&--left {
+		left: 10px;
+		&::after {
+			left: 18px;
+			background: transparent;
+			border-top: solid 2px currentColor;
+			border-right: solid 2px currentColor;
+			transform: translateY(-50%) rotate(-135deg); 
+		}
+	}
+	&--right {
+		right: 10px;
+		&::after {
+			right: 18px;
+			background: transparent;
+			border-top: solid 2px currentColor;
+			border-right: solid 2px currentColor;
+			transform: translateY(-50%) rotate(45deg); 
+		}
+	}
+	&--close {
+		float: right;
+		margin: 5px;
+		&::before, 
+		&::after {
+			width: 20px;
+			height: 2px;
+			top: calc(50% - 1px);
+			left: calc(50% - 10px); 
+		}
+		&::before {
+			transform: rotate(45deg); 
+		}
+		&::after {
+			transform: rotate(-45deg); 
+		}
+	}
 }
-
-.fancybox-button--disabled {
-  cursor: default;
-  pointer-events: none; }
-
-.fancybox-infobar__body, .fancybox-button {
-  background: rgba(30, 30, 30, 0.6); }
-
-.fancybox-button:hover {
-  background: rgba(0, 0, 0, 0.8); }
-
-.fancybox-button::before,
-.fancybox-button::after {
-  content: '';
-  pointer-events: none;
-  position: absolute;
-  border-color: #fff;
-  background-color: currentColor;
-  color: currentColor;
-  opacity: 0.9;
-  box-sizing: border-box;
-  display: inline-block; }
-
-.fancybox-button--disabled::before,
-.fancybox-button--disabled::after {
-  opacity: 0.5; }
-
-.fancybox-button--left::after {
-  left: 20px;
-  top: 18px;
-  width: 6px;
-  height: 6px;
-  background: transparent;
-  border-top: solid 2px currentColor;
-  border-right: solid 2px currentColor;
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  transform: rotate(-135deg); }
-
-.fancybox-button--right::after {
-  right: 20px;
-  top: 18px;
-  width: 6px;
-  height: 6px;
-  background: transparent;
-  border-top: solid 2px currentColor;
-  border-right: solid 2px currentColor;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.fancybox-button--left {
-  border-radius: 0 5px 5px 0; 
-  left: 0;
-}
-
-.fancybox-button--right {
-  border-radius: 5px 0 0 5px; 
-  right: 0;
-}
-
-.fancybox-button--close {
-  float: right; }
-
-.fancybox-button--close::before, .fancybox-button--close::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  height: 2px;
-  width: 16px;
-  top: calc(50% - 1px);
-  left: calc(50% - 8px); }
-
-.fancybox-button--close::before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.fancybox-button--close::after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-
 /* Loading spinner */
 .fancybox-loading {
   border: 6px solid rgba(100, 100, 100, 0.4);
@@ -470,31 +454,31 @@
 
 @-webkit-keyframes fancybox-rotate {
   from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg); }
   to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
+	-webkit-transform: rotate(359deg);
+	transform: rotate(359deg); } }
 
 @keyframes fancybox-rotate {
   from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg); }
   to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
+	-webkit-transform: rotate(359deg);
+	transform: rotate(359deg); } }
 
 /* Styling for Small-Screen Devices */
 @media all and (max-width: 800px) {
   .fancybox-controls {
-    text-align: left; }
+	text-align: left; }
   .fancybox-button--left,
   .fancybox-button--right,
   .fancybox-buttons button:not(.fancybox-button--close) {
-    display: none !important; }
+	display: none !important; }
   .fancybox-caption {
-    padding: 20px 0;
-    margin: 0; } }
+	padding: 20px 0;
+	margin: 0; } }
 
 /* Fullscreen  */
 .fancybox-button--fullscreen::before {
@@ -625,8 +609,8 @@ li.fancybox-thumbs-loading {
 /* Styling for Small-Screen Devices */
 @media all and (max-width: 800px) {
   .fancybox-thumbs {
-    display: none !important; }
+	display: none !important; }
   .fancybox-container--thumbs .fancybox-controls,
   .fancybox-container--thumbs .fancybox-slider-wrap,
   .fancybox-container--thumbs .fancybox-caption-wrap {
-    right: 0; } }
+	right: 0; } }
