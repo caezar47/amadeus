@@ -25,6 +25,14 @@ $(document.body).on('click', '.form__btn-pass', null, function(event){
 	
 });
 
-$(".form__switch").on('click', function(e) {
-	$(this).toggleClass('is--active');
-});	
+$('.form__size-qty-btn').on('click', function() {
+    var action = $(this).attr('data-action')
+    var input = $(this).siblings('input[type="number"]')
+    var size = $(this).siblings('.form__size-input')
+    var value = input.val()
+    if(action == '-' && value > 0) value--
+    else if(action == '+') value++
+    input.val(value)
+	if(value > 0) size.prop('checked', true) 
+	else size.prop('checked', false)
+})

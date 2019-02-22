@@ -136,6 +136,30 @@
 				line-height: @b-lh - 4;				
 			}
 		}
+		&.is--basket-wholesale{
+			@media @media-point-device {
+				padding: 10px 10px;
+				.btn__name span{
+					display: none;
+				}
+			}
+			@media @media-point-smart {
+				font-size: @b-fs - 4;
+				line-height: @b-lh - 4;				
+			}
+			@media @media-point-screen {
+				.heading6();
+				padding: 12px 2.2vw;
+				&.is--line{
+					padding: 10px 1.5vw;
+					font-weight: 400;
+					border-width: 2px;
+				}	
+				& + &{
+					margin-left: 25px;
+				}					
+			}
+		}
 		.cabinet__delivery-footer-btn &{
 			font-weight: 400;
 			background-color: transparent;
@@ -182,8 +206,8 @@
 			transform-origin: bottom;
 			transition: @trs-site;
 		}
-		.card-item__card:hover &,
-		.card-item__card.is--active &,
+		//.card-item__card:hover &,
+		//.card-item__card.is--active &,
 		&:hover{			
 			color: @btn_l_hover_color;
 			font-weight: 700;

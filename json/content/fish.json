@@ -48,7 +48,12 @@
 		"404":"/amadeus/404.html",
 		"sitemap":"/amadeus/sitemap.html",
 		"style":"/amadeus/style.html",
-		"agreement":"/amadeus/agreement.html"
+		"agreement":"/amadeus/agreement.html",
+		"wholesale":{
+			"index":"/amadeus/wholesale.html",
+			"catalog_card":"/amadeus/wholesale-catalog-card.html",
+			"basket":"/amadeus/wholesale-basket.html"
+		}
 	},	                           
 	"url-path-css":"/amadeus/css",
 	"url-path-img":"/amadeus/img",

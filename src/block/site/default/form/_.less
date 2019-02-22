@@ -325,6 +325,7 @@
 		&.is--active{
 			display: block;
 		}
+		&:hover, &:focus{color: @primary;}
 		svg{display: block;}
 	}
 	&text{
@@ -366,6 +367,106 @@
 
 		}
 
+	}
+	//size	
+	&size{
+		&-block{
+			width: 40px;
+			&.is--lg{
+				width: 70px;
+			}
+		}
+		&{
+			display: block;
+			position: relative;
+		}
+		&-input{
+			.visually-hidden();
+		}
+		&-name{
+			text-align: center;
+			width: 100%;
+			line-height: 38px;
+			padding: 0 5px;
+			margin-bottom: 5px;
+			border-radius: 3px;
+			color: @warning;
+			box-shadow: 0 0 0 1px @warning;
+			transition: @trs-site;
+			.form__size-input:focus + &,
+			.form__size-input:checked:focus + &{
+				box-shadow: 0 0 0 1px @primary, 
+					0 0 0 3px @success; 
+			}
+			.form__size-input:checked + &{
+				color: @white;
+				font-weight: 700;
+				background-color: @primary;				
+				box-shadow: 0 0 0 1px @primary;
+			}
+			.form__size-input:checked:disabled + &{
+				color: @white;
+				font-weight: 700;
+				background-color: fadeout(@primary, 40%);				
+				box-shadow: 0 0 0 1px fadeout(@primary, 40%);
+			}
+			.form__size-input:disabled + &{
+				color: fadeout(@warning, 60%);		
+				box-shadow: 0 0 0 1px fadeout(@warning, 60%);
+			}
+		}
+		&-qty{
+		}
+		&-qty-btn{			
+			.form__size-input:disabled ~ &{
+				display: none;
+			}
+			.btn-clearfix();
+			display: block;
+			width: 100%;
+			border: 1px solid @info;
+			color: @primary;
+			padding: 12px 0;
+			text-align: center;
+			&.is--plus{
+				border-radius: 3px 3px 0 0;
+			}
+			&.is--minus{
+				border-radius: 0 0 3px 3px;
+				padding: 18px 0;
+			}
+			&:hover{
+				background-color: @primary;
+				color: @white;
+			}
+			svg{
+				display: block;
+				margin: 0 auto;
+				fill: currentColor;
+			}
+		}
+		&-qty-input{
+			.form__size-input:disabled ~ &{
+				display: none;
+			}
+			display: block;
+			width: 100%;
+			appearance: none;
+			border: 0;
+			height: 40px;
+			border-left: 1px solid @info;
+			border-right: 1px solid @info;
+			background-color: transparent;
+			text-align: center;
+			color: @default;
+			padding: 0 3px;
+			&[type=number]{ -moz-appearance: textfield; }
+			&[type=number]::-webkit-inner-spin-button,
+			&[type=number]::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+		}
 	}
 	//radio	
 	&radio{
@@ -501,6 +602,9 @@
 				color: @switch_focus_color;
 			}
 		}
+		&-input{
+			.visually-hidden();
+		}
 		&-icon{
 			width: 28px;
 			height: 28px;
@@ -510,14 +614,17 @@
 				transition: @trs-site;
 				fill: transparent;
 				stroke: @switch_border_color;
-				.form__switch.is--active &{
+				.form__switch-input:disabled ~.form__switch-icon &{
+					stroke: @info;
+				}
+				.form__switch-input:checked ~.form__switch-icon &{
 					stroke: @switch_focus_border_color;
 				}				
 			}
 			&-bg{
 				transition: @trs-site;
 				fill: @switch_bg_color;
-				.form__switch.is--active &{
+				.form__switch-input:checked ~.form__switch-icon &{
 					fill: @switch_focus_bg_color;
 				}
 			}
@@ -526,7 +633,7 @@
 				fill: transparent;
 				transform: scale(3);
 				transform-origin: center;
-				.form__switch.is--active &{
+				.form__switch-input:checked ~.form__switch-icon &{
 					transition: all @trs-option 0.2s;
 					fill: @white;
 					transform: scale(1);
@@ -534,7 +641,17 @@
 			}
 		}	
 		&-label{
-
+			.form__switch-input:disabled ~ &{
+				color: @info;
+			}
+			.form__switch-input:checked ~ &{
+				color: @primary;
+				font-weight: 700;
+			}
+			.form__switch-input:checked:focus ~ &,
+			.form__switch-input:focus ~ &{
+				color: @success;
+			}
 		}
 	}
 	/*&switch{

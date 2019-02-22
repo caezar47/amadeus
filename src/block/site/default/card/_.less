@@ -308,12 +308,24 @@
 				}
 			}
 			&.is--size{
-				margin-bottom: 35px;
+				//margin-bottom: 35px;
+				margin-bottom: 15px;
 				&-heading{
 					margin-bottom: 12px;
 				}
+				&-row{
+					display: flex;
+					flex-wrap: wrap;
+					margin: -10px -5px 0;
+				}
+				&-cols{
+					padding: 10px 5px 0;
+				}
 			}
-			&.is--qty{
+			&.is--btn{
+				margin-bottom: 30px;
+			}
+			/*&.is--qty{
 				margin-bottom: 30px;
 				@media @media-point-screen {
 					margin-bottom: 3.5vw
@@ -321,8 +333,8 @@
 				&-heading{
 					margin-bottom: 12px;
 				}
-			}
-			&.is--cost{
+			}*/
+			&.is--form{
 				&{
 					border-bottom: 2px solid @primary;
 					padding-bottom: 35px;
@@ -331,7 +343,13 @@
 						padding-bottom: 5.6vw;
 					}
 				}
+			}
+			&.is--cost{
+				&{
+					margin-bottom: 0;
+				}
 				&-heading{
+					font-size: @b-fs - 2;
 					margin-bottom: 5px;
 				}
 				&-num{

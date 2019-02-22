@@ -1,5 +1,7 @@
 <div class="{{block_prefix}}item  is--switch  {{block_mod}}  {{block_mod_elem}}">
-	<button type="button" class="{{block_prefix}}switch  {{block_mod}}  {{block_color}}  {{block_mod_elem}}">
+	<label class="{{block_prefix}}switch  {{block_mod}}  {{block_color}}  {{block_mod_elem}}">
+
+		<input type="radio" class="{{block_prefix}}switch-input  {{block_mod}}   validate[required]" name="{{block_group}}" id="{{block_group}}[{{block_id}}]" value="{{block_heading}}" {{block_attr}}>
 		<svg class="{{block_prefix}}switch-icon  {{block_mod}}  {{block_color}}  {{block_mod_elem}}" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
 			<circle class="{{block_prefix}}switch-icon-border  {{block_mod}}  {{block_color}}  {{block_mod_elem}}" cx="14" cy="14" r="13.5"/>
 			<circle class="{{block_prefix}}switch-icon-bg  {{block_mod}}  {{block_color}}  {{block_mod_elem}}" cx="14" cy="14" r="11"/>
@@ -8,5 +10,5 @@
 		<div class="{{block_prefix}}switch-label  {{block_mod}}  {{block_color}}  {{block_mod_elem}}"> 
 			{{block_label}}
 		</div>
-	</button>	
+	</label>	
 </div>

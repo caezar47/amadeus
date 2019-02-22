@@ -1,4 +1,5 @@
-<label for="{{block_group}}[{{block_id}}]" class="{{block_prefix}}card  {{block_mod}}">
+<label class="{{block_prefix}}card  {{block_mod}}">
+	<input type="radio" class="{{block_prefix}}card-input  {{block_mod}}   validate[required]" name="{{block_group}}" id="{{block_group}}[{{block_id}}]" value="{{block_heading}}" {{block_attr}}>
 	<div class="{{block_prefix}}card-btn  {{block_mod}}">
 		[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="{{block_icon}}" ]]
 		<svg class="{{block_prefix}}card-btn-switch  {{block_mod}}" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
@@ -11,5 +12,4 @@
 		<div class="{{block_prefix}}card-heading  {{block_mod}}">{{block_heading}}</div>
 		<div class="{{block_prefix}}card-heading-small  {{block_mod}}">{{block_heading_small}}</div>
 	</div>
-	<input type="radio" class="{{block_prefix}}card-input  {{block_mod}}   validate[required]" name="{{block_group}}" id="{{block_group}}[{{block_id}}]" value="{{block_heading}}">
 </label>
