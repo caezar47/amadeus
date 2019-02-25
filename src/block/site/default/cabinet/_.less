@@ -1007,6 +1007,11 @@
 					grid-template-columns: 7.5fr 1.5fr 1fr 1fr 1fr;				
 				}		
 			}
+			&.is--device-bar{
+				display: grid;
+				grid-gap: 15px;	
+				justify-content: flex-end;				
+			}
 			/*&.is--total-wholesale{
 				display: grid;
 				grid-gap: 5px 15px;
@@ -1058,6 +1063,7 @@
 			&-bar{
 				@media @media-point-device {
 					position: fixed;
+					z-index: 5;
 					bottom: 0;
 					left: 0;
 					background-color: @info;
@@ -1110,6 +1116,14 @@
 					&.is--wholesale{
 						padding-top: 20px;
 					}	
+				}
+			}
+		}
+		&-device{
+			&-bar{
+				padding-top: 30px;
+				@media @media-point-screen {
+					display: none; 
 				}
 			}
 		}

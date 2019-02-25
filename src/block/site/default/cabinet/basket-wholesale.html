@@ -184,7 +184,7 @@
 					button_name="Оформить <span>заказ</span>"
 				]]
 			</div>
-		</div>
+		</div> 
 		<!--<div class="{{block_prefix}}row  row  is--jcsb  is--gap-xs   is--gutter  {{block_mod}}">
 			<div class="{{block_prefix}}cols cols  is--empty  {{block_mod}}">
 				[[azbntple 
@@ -238,5 +238,38 @@
 				]]
 			</div>
 		</div>-->
+	</div>
+	<div class="{{block_prefix}}device-bar  {{block_mod}}">
+		<div class="{{block_prefix}}grid  is--device-bar  {{block_mod}}">
+			<div class="grid__cols">
+				<div class="{{block_prefix}}total-heading-small  {{block_mod}}">	Цена без скидки:
+					<span>11 830<small>₽</small></span>
+				</div>
+			</div>
+			<div class="grid__cols">
+				<div class="{{block_prefix}}total-heading-small  is--sale {{block_mod}}">
+					Скидка:
+					<span>-2 230<small>₽</small></span>
+				</div>
+			</div>
+			<div class="grid__cols">
+				<div class="{{block_prefix}}total-heading  is--wholesale  {{block_mod}}">
+					Итого:
+				</div>
+				<div>
+					<span class="{{block_prefix}}total-qty  {{block_mod}}">3 <small>уп.</small></span>
+					<span class="{{block_prefix}}total-cost  is--wholesale    {{block_mod}}">9 600<small>₽</small></span>
+				</div>				
+			</div>
+			<div class="grid__cols">				
+				[[azbntple 
+					tpl="/src/block/site/default/button/btn-modal.html"
+					button_prefix="btn__" 
+					button_mod="is--line  is--basket-wholesale"
+					button_target="modal-manager"
+					button_name="Связаться с менеджером"
+				]]
+			</div>
+		</div>
 	</div>
 </div>
